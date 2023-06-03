@@ -8189,6 +8189,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Sign_mC342EFA64DCA2E65BCF71F1206
 		return ((int32_t)((int64_t)(((int64_t)(L_0>>((int32_t)63)))|((int64_t)((uint64_t)((-L_1))>>((int32_t)63))))));
 	}
 }
+// System.Single System.Math::Abs(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Math_Abs_m9AC832833620E36FDADACC7664F431DC274F0F48 (float ___0_value, const RuntimeMethod* method) 
+{
+	return fabsf(___0_value);
+}
 // System.Double System.Math::Atan(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Atan_m653A85096EA3E38D6B5998337232B82A3548EAC7 (double ___0_d, const RuntimeMethod* method) 
 {
@@ -8200,6 +8205,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Pow_mEAE651F0858203FBE12B72B6A539
 	typedef double (*Math_Pow_mEAE651F0858203FBE12B72B6A53951BBD0FB5265_ftn) (double, double);
 	using namespace il2cpp::icalls;
 	return ((Math_Pow_mEAE651F0858203FBE12B72B6A53951BBD0FB5265_ftn)mscorlib::System::Math::Pow) (___0_x, ___1_y);
+}
+// System.Double System.Math::Sin(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sin_m61D24F343A3600A65BEB0E45DD7EA32AAF880AC1 (double ___0_a, const RuntimeMethod* method) 
+{
+	return sin(___0_a);
 }
 // System.Double System.Math::Sqrt(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sqrt_mDB25CBFDA365A8A640BD764269A9EBBDDD068682 (double ___0_d, const RuntimeMethod* method) 
