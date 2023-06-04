@@ -8,6 +8,10 @@ public class Room : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InitalizeTiles();
+    }
+
+    public void InitalizeTiles() {
         var one = new GameObject();
         one.name = "Row 1";
         CreateCornerSide(one);
@@ -30,7 +34,9 @@ public class Room : MonoBehaviour
         three.transform.SetParent(gameObject.transform);
     }
 
-    private void CreateOpenSide(GameObject side) {
+    
+
+    public void CreateOpenSide(GameObject side) {
         var wallSection1 = new GameObject();
         wallSection1.name = "Wall Section 1";
         CreateSideSection(wallSection1);
@@ -53,7 +59,7 @@ public class Room : MonoBehaviour
         wallSection2.transform.SetParent(side.transform);
     }
 
-    private void CreateCornerSide(GameObject side) {
+    public void CreateCornerSide(GameObject side) {
         var cornerSection1 = new GameObject();
         cornerSection1.name = "Corner Section 1";
         CreateCornerSection(cornerSection1);
@@ -76,7 +82,7 @@ public class Room : MonoBehaviour
         cornerSection2.transform.SetParent(side.transform);
     }
 
-    private void CreateCornerSection(GameObject section) {
+    public void CreateCornerSection(GameObject section) {
         var floor = new GameObject();
         floor.name = "Floor";
         boardObj.GetComponent<Board>().InitalizeTiles(floor, 10, 10);
@@ -99,7 +105,7 @@ public class Room : MonoBehaviour
         wallTwo.transform.SetParent(section.transform);
     }
 
-    private void CreateSideSection(GameObject section) {
+    public void CreateSideSection(GameObject section) {
         var floor = new GameObject();
         floor.name = "Floor";
         boardObj.GetComponent<Board>().InitalizeTiles(floor, 10, 10);
@@ -115,7 +121,7 @@ public class Room : MonoBehaviour
         wallOne.transform.SetParent(section.transform);
     }
 
-    private void CreateOpenSection(GameObject section) {
+    public void CreateOpenSection(GameObject section) {
         var floor = new GameObject();
         floor.name = "Floor";
         boardObj.GetComponent<Board>().InitalizeTiles(floor, 10, 10);
