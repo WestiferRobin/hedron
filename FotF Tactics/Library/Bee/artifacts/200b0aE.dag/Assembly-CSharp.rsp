@@ -345,10 +345,13 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Board.cs"
-"Assets/Scripts/CameraController.cs"
+"Assets/Scripts/old/Room.cs"
 "Assets/Scripts/ParamBoard.cs"
-"Assets/Scripts/Room.cs"
+"Assets/Scripts/player/CameraController.cs"
+"Assets/Scripts/Ship.cs"
+"Assets/Scripts/ShipEnum.cs"
 "Assets/Scripts/Team.cs"
+"Assets/Scripts/Wall.cs"
 -langversion:9.0
 
 /deterministic
