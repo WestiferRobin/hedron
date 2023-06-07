@@ -30,7 +30,6 @@ public class Board : MonoBehaviour
         wallCount++;
         var wallObj = Instantiate(wall, Vector3.zero, Quaternion.identity);
         wallObj.name = $"Wall {wallCount}";
-
         return wallObj;
     }
 
@@ -38,7 +37,6 @@ public class Board : MonoBehaviour
         doorCount++;
         var doorObj = Instantiate(door, Vector3.zero, Quaternion.identity);
         doorObj.name = $"Door {doorCount}";
-
         return doorObj;
     }
 

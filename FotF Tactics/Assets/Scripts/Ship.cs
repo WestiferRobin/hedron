@@ -19,6 +19,9 @@ public class Ship : MonoBehaviour
     }
     
     public int shipClassId = 0;
+    public GameObject ally;
+    public GameObject enemy;
+
     private ShipClass shipClass = ShipClass.Unknown;
     private int floorCount = 0;
     private int hallwayCount = 0;
@@ -73,158 +76,51 @@ public class Ship : MonoBehaviour
         // then create shell
         int hallwayAmmount; 
         int roomAmmount;
-        int doorAmmount;
-        int wallAmmount;
         switch (shipClass) {
             // Atlantians
             case ShipClass.Kestrel:
-                hallwayAmmount = 1; //10; 
-                roomAmmount = 1; //7;
-                wallAmmount = 9;
-                doorAmmount = 3;
+                hallwayAmmount = 10; 
+                roomAmmount = 7;
                 break;
             case ShipClass.Federation:
                 hallwayAmmount = 14; 
                 roomAmmount = 4;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             case ShipClass.Slug:
                 hallwayAmmount = 11; 
                 roomAmmount = 5;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             case ShipClass.Mantis:
                 hallwayAmmount = 11; 
                 roomAmmount = 6;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             // Annunaki
             case ShipClass.Zoltan:
                 hallwayAmmount = 13; 
                 roomAmmount = 5;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             case ShipClass.Stealth:
                 hallwayAmmount = 8; 
                 roomAmmount = 6;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             case ShipClass.Rock:
                 hallwayAmmount = 10; 
                 roomAmmount = 6;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             case ShipClass.Engi:
                 hallwayAmmount = 12; 
                 roomAmmount = 2;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
             default:
                 hallwayAmmount = 0; 
                 roomAmmount = 0;
-                wallAmmount = 0;
-                doorAmmount = 0;
                 break;
         }
-        BuildLayout(hallwayAmmount, roomAmmount, wallAmmount, doorAmmount);
-        AssignLayout(hallwayAmmount, roomAmmount, wallAmmount, doorAmmount);
+        BuildLayout(hallwayAmmount, roomAmmount);
     }
 
-    private void AssignLayout(int hallwayAmmount, int roomAmmount, int wallAmmount, int doorAmmount) {
-        Dictionary<string, Stack<Vector3>> shipClassPosition = GetShipClassPosition();
-        Dictionary<string, Stack<Vector3>> shipClassRotation = GetShipClassRotation();
 
-        var hallways = gameObject.transform.Find("Hallways");
-        var hallwayPosStack = shipClassLayout["Hallway"];
-        var hallwayRotationStack = shipClassRotation["Hallway"];
-        for (int index = 0; index < hallwayAmmount; index++) {
-            var hallway = hallways.transform.Find($"Hallway {index + 1}");
-        }
-
-        var rooms = gameObject.transform.Find("Rooms");
-        var roomPosStack = shipClassLayout["Room"];
-        var roomRotationStack = shipClassRotation["Room"];
-        for (int index = 0; index < roomAmmount; index++) {
-            var room = rooms.transform.Find($"Room {index + 1}");
-        }
-
-        var walls = gameObject.transform.Find("Walls");
-        var wallPosStack = shipClassLayout["Wall"];
-        var wallRotationStack = shipClassRotation["Wall"];
-        for (int index = 0; index < roomAmmount; index++) {
-            var wall = walls.transform.Find($"Wall {index + 1}");
-        }
-
-        var doors = gameObject.transform.Find("Doors");
-        var doorPosStack = shipClassLayout["Door"];
-        var doorRotationStack = shipClassRotation["Door"];
-        for (int index = 0; index < roomAmmount; index++) {
-            var door = doors.transform.Find($"Door {index + 1}");
-        }
-    }
-
-    private Dictionary<string, Stack<Vector3>> GetShipClassPosition() {
-        var shipClassPosition = new Dictionary<string, Stack<Vector3>>();
-        switch (shipClass) {
-            // Atlantians
-            case ShipClass.Kestrel:
-                break;
-            case ShipClass.Federation:
-                break;
-            case ShipClass.Slug:
-                break;
-            case ShipClass.Mantis:
-                break;
-            // Annunaki
-            case ShipClass.Zoltan:
-                break;
-            case ShipClass.Stealth:
-                break;
-            case ShipClass.Rock:
-                break;
-            case ShipClass.Engi:
-                break;
-            default:
-                break;
-        }
-        return shipClassPosition;
-    }
-
-    private Dictionary<string, Stack<Vector3>> GetShipClassRotation() {
-        var shipClassRotation = new Dictionary<string, Stack<Vector3>>();
-        switch (shipClass) {
-            // Atlantians
-            case ShipClass.Kestrel:
-                break;
-            case ShipClass.Federation:
-                break;
-            case ShipClass.Slug:
-                break;
-            case ShipClass.Mantis:
-                break;
-            // Annunaki
-            case ShipClass.Zoltan:
-                break;
-            case ShipClass.Stealth:
-                break;
-            case ShipClass.Rock:
-                break;
-            case ShipClass.Engi:
-                break;
-            default:
-                break;
-        }
-        return shipClassRotation;
-    }
-
-    private void BuildLayout(int hallwayAmmount, int roomAmmount, int wallAmmount, int doorAmmount) {
+    private void BuildLayout(int hallwayAmmount, int roomAmmount) {
         var hallways = new GameObject("Hallways");
         for (int index = 0; index < hallwayAmmount; index++) {
             var hallway = BuildHallway();
@@ -239,19 +135,34 @@ public class Ship : MonoBehaviour
         }
         rooms.transform.SetParent(gameObject.transform);
 
-        var walls = new GameObject("walls");
-        for (int index = 0; index < wallAmmount; index++) {
-            var wall = BuildWall();
-            wall.transform.SetParent(walls.transform);
+        var layoutPosition = GetShipClassPosition();
+        foreach (var key in layoutPosition.Keys) {
+            if (key.Contains("Room")) {
+                var room = GameObject.Find(key);
+                room.transform.position = layoutPosition[key];
+            } else if (key.Contains("Hallway")) {
+                var hallway = GameObject.Find(key);
+                hallway.transform.position = layoutPosition[key];
+            }
         }
-        walls.transform.SetParent(gameObject.transform);
 
-        var doors = new GameObject("Doors");
-        for (int index = 0; index < doorAmmount; index++) {
-            var door = BuildDoor();
-            door.transform.SetParent(doors.transform);
+        var layoutRotation = GetShipClassRotation();
+        foreach (var key in layoutRotation.Keys) {
+            var rotation = Vector3.zero;
+            if (key.Contains("Room")) {
+                var room = GameObject.Find(key);
+                rotation = layoutRotation[key];
+                room.transform.Rotate(rotation.x, rotation.y, rotation.z, Space.Self);
+            } else if (key.Contains("Hallway")) {
+                var hallway = GameObject.Find(key);
+                rotation = layoutRotation[key];
+                hallway.transform.Rotate(rotation.x, rotation.y, rotation.z, Space.Self);
+            }
         }
-        doors.transform.SetParent(gameObject.transform);
+
+        AddDoors();
+        Instantiate(ally, new Vector3(2.5f, 0.05f, 2.5f), Quaternion.identity);
+        Instantiate(enemy, new Vector3(7.5f, 0.05f, 2.5f), Quaternion.identity);
     }
 
     private GameObject BuildHallway() {
@@ -270,6 +181,41 @@ public class Ship : MonoBehaviour
         gameObject.GetComponent<Board>().InitalizeTiles(floorTwo, 5, 5);
         floorTwo.transform.position = new Vector3(0, 0, 5);
         floorTwo.transform.SetParent(hallway.transform);
+
+        for (int index = 0; index < 6; index++) {
+            var wall = gameObject.GetComponent<Board>().InitalizeWall();
+            Vector3 position = Vector3.zero;
+            Vector3 rotation = Vector3.zero;
+            switch (index) {
+                case 0:
+                    position  = new Vector3(0, 0, 0);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+                case 1:
+                    position  = new Vector3(0, 0, 10);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+                case 2:
+                    position  = new Vector3(0, 0, 5);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 3:
+                    position  = new Vector3(0, 0, 10);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 4:
+                    position  = new Vector3(5, 0, 5);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 5:
+                    position  = new Vector3(5, 0, 10);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+            }
+            wall.transform.position = position;
+            wall.transform.Rotate(rotation.x, rotation.y, rotation.z, Space.Self);
+            wall.transform.SetParent(hallway.transform);
+        }
 
         return hallway;
     }
@@ -303,6 +249,49 @@ public class Ship : MonoBehaviour
         floorFour.transform.position = new Vector3(0, 0, 5);
         floorFour.transform.SetParent(room.transform);
 
+        for (int index = 0; index < 8; index++) {
+            var wall = gameObject.GetComponent<Board>().InitalizeWall();
+            Vector3 position = Vector3.zero;
+            Vector3 rotation = Vector3.zero;
+            switch (index) {
+                case 0:
+                    position  = new Vector3(0, 0, 0);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+                case 1:
+                    position  = new Vector3(0, 0, 10);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+                case 2:
+                    position  = new Vector3(0, 0, 5);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 3:
+                    position  = new Vector3(0, 0, 10);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 4:
+                    position  = new Vector3(10, 0, 5);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 5:
+                    position  = new Vector3(10, 0, 10);
+                    rotation = new Vector3(0, 90, 0);
+                    break;
+                case 6:
+                    position  = new Vector3(5, 0, 0);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+                case 7:
+                    position  = new Vector3(5, 0, 10);
+                    rotation = new Vector3(0, 0, 0);
+                    break;
+            }
+            wall.transform.position = position;
+            wall.transform.Rotate((float) rotation.x, (float) rotation.y, (float) rotation.z, Space.Self);
+            wall.transform.SetParent(room.transform);
+        }
+
         return room;
     }
 
@@ -313,4 +302,198 @@ public class Ship : MonoBehaviour
     public GameObject BuildDoor() {
         return gameObject.GetComponent<Board>().InitalizeDoor();
     }
+
+    private void AddDoors() {
+        var repeats = new List<string>();
+        var doors = new List<string>();
+        switch (shipClass) {
+            // Atlantians
+            case ShipClass.Kestrel:
+                repeats.Add("Wall 5");
+                repeats.Add("Wall 6");
+                repeats.Add("Wall 7");
+                repeats.Add("Wall 8");
+                repeats.Add("Wall 13");
+                repeats.Add("Wall 14");
+                repeats.Add("Wall 21");
+                repeats.Add("Wall 22");
+                repeats.Add("Wall 29");
+                repeats.Add("Wall 30");
+                repeats.Add("Wall 32");
+                repeats.Add("Wall 33");
+                repeats.Add("Wall 38");
+                repeats.Add("Wall 41");
+                repeats.Add("Wall 43");
+                repeats.Add("Wall 45");
+                repeats.Add("Wall 49");
+                repeats.Add("Wall 53");
+                repeats.Add("Wall 57");
+                repeats.Add("Wall 58");
+                repeats.Add("Wall 64");
+                repeats.Add("Wall 65");
+                repeats.Add("Wall 66");
+                repeats.Add("Wall 70");
+                repeats.Add("Wall 72");
+                repeats.Add("Wall 73");
+                repeats.Add("Wall 76");
+                repeats.Add("Wall 77");
+                repeats.Add("Wall 82");
+                repeats.Add("Wall 85");
+                repeats.Add("Wall 87");
+                repeats.Add("Wall 90");
+                repeats.Add("Wall 94");
+                repeats.Add("Wall 96");
+                repeats.Add("Wall 97");
+                repeats.Add("Wall 103");
+                repeats.Add("Wall 104");
+                repeats.Add("Wall 107");
+                repeats.Add("Wall 108");
+                repeats.Add("Wall 109");
+                repeats.Add("Wall 110");
+                repeats.Add("Wall 113");
+                repeats.Add("Wall 114");
+
+                doors.Add("Wall 43");
+                doors.Add("Wall 49");
+                doors.Add("Wall 64");
+                doors.Add("Wall 65");
+                doors.Add("Wall 66");
+                doors.Add("Wall 72");
+                doors.Add("Wall 77");
+                doors.Add("Wall 83");
+                doors.Add("Wall 85");
+                doors.Add("Wall 87");
+                doors.Add("Wall 94");
+                doors.Add("Wall 96");
+                doors.Add("Wall 103");
+                doors.Add("Wall 104");
+                doors.Add("Wall 107");
+                doors.Add("Wall 108");
+                doors.Add("Wall 109");
+                doors.Add("Wall 110");
+                doors.Add("Wall 113");
+                doors.Add("Wall 114");
+                break;
+            case ShipClass.Federation:
+                break;
+            case ShipClass.Slug:
+                break;
+            case ShipClass.Mantis:
+                break;
+            // Annunaki
+            case ShipClass.Zoltan:
+                break;
+            case ShipClass.Stealth:
+                break;
+            case ShipClass.Rock:
+                break;
+            case ShipClass.Engi:
+                break;
+            default:
+                break;
+        }
+        foreach (var key in doors) {
+            var wall = GameObject.Find(key);
+            var door = BuildDoor();
+            door.transform.position = wall.transform.position;
+            door.transform.Rotate(
+                wall.transform.eulerAngles.x, 
+                wall.transform.eulerAngles.y, 
+                wall.transform.eulerAngles.z, 
+                Space.Self
+            );
+            door.transform.SetParent(wall.transform.parent.gameObject.transform);
+        }
+        foreach (var repeat in repeats) {
+            Destroy(GameObject.Find(repeat));
+        }
+    }
+
+    private Dictionary<string, Vector3> GetShipClassPosition() {
+        var shipClassPosition = new Dictionary<string, Vector3>();
+        switch (shipClass) {
+            // Atlantians
+            case ShipClass.Kestrel:
+                shipClassPosition["Hallway 1"] = new Vector3(0, 0, 0);
+
+                shipClassPosition["Room 1"] = new Vector3(5, 0, 0);
+
+                shipClassPosition["Hallway 2"] = new Vector3(15, 0, 5);
+                shipClassPosition["Hallway 3"] = new Vector3(15, 0, 10);
+
+                shipClassPosition["Room 2"] = new Vector3(25, 0, -5);
+                shipClassPosition["Room 3"] = new Vector3(25, 0, 5);
+                shipClassPosition["Room 4"] = new Vector3(35, 0, -5);
+                shipClassPosition["Room 5"] = new Vector3(35, 0, 5);
+
+                shipClassPosition["Hallway 4"] = new Vector3(35, 0, -5);
+                shipClassPosition["Hallway 5"] = new Vector3(35, 0, 20);
+
+                shipClassPosition["Room 6"] = new Vector3(45, 0, 0);
+
+                shipClassPosition["Hallway 6"] = new Vector3(50, 0, 0);
+                shipClassPosition["Hallway 7"] = new Vector3(50, 0, 15);
+                shipClassPosition["Hallway 8"] = new Vector3(60, 0, 0);
+                shipClassPosition["Hallway 9"] = new Vector3(60, 0, 15);
+
+                shipClassPosition["Room 7"] = new Vector3(60, 0, 0);
+
+                shipClassPosition["Hallway 10"] = new Vector3(70, 0, 0);
+                break;
+            case ShipClass.Federation:
+                break;
+            case ShipClass.Slug:
+                break;
+            case ShipClass.Mantis:
+                break;
+            // Annunaki
+            case ShipClass.Zoltan:
+                break;
+            case ShipClass.Stealth:
+                break;
+            case ShipClass.Rock:
+                break;
+            case ShipClass.Engi:
+                break;
+            default:
+                break;
+        }
+        return shipClassPosition;
+    }
+
+    private Dictionary<string, Vector3> GetShipClassRotation() {
+        var shipClassRotation = new Dictionary<string, Vector3>();
+        switch (shipClass) {
+            // Atlantians
+            case ShipClass.Kestrel:
+                shipClassRotation["Hallway 2"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 3"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 4"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 5"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 6"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 7"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 8"] = new Vector3(0, 90, 0);
+                shipClassRotation["Hallway 9"] = new Vector3(0, 90, 0);
+                break;
+            case ShipClass.Federation:
+                break;
+            case ShipClass.Slug:
+                break;
+            case ShipClass.Mantis:
+                break;
+            // Annunaki
+            case ShipClass.Zoltan:
+                break;
+            case ShipClass.Stealth:
+                break;
+            case ShipClass.Rock:
+                break;
+            case ShipClass.Engi:
+                break;
+            default:
+                break;
+        }
+        return shipClassRotation;
+    }
+
 }
