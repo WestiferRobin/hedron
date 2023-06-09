@@ -344,14 +344,11 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/Board.cs"
-"Assets/Scripts/old/Room.cs"
-"Assets/Scripts/ParamBoard.cs"
-"Assets/Scripts/player/CameraController.cs"
-"Assets/Scripts/Ship.cs"
-"Assets/Scripts/ShipEnum.cs"
-"Assets/Scripts/Team.cs"
-"Assets/Scripts/Wall.cs"
+"Assets/Scripts/Player/CameraController.cs"
+"Assets/Scripts/Player/Team.cs"
+"Assets/Scripts/ShipBoard/Board.cs"
+"Assets/Scripts/ShipBoard/Ship.cs"
+"Assets/Scripts/ShipBoard/Tile.cs"
 -langversion:9.0
 
 /deterministic
