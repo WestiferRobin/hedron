@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 941813736}
   - component: {fileID: 941813737}
   - component: {fileID: 941813738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShipBoard
   m_TagString: Board
   m_Icon: {fileID: 0}
@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipClass: 0
+  Floors: []
 --- !u!114 &941813738
 MonoBehaviour:
   m_ObjectHideFlags: 0
