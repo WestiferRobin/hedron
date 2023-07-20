@@ -8,3 +8,29 @@ look up this tutorial for HedronChess: https://www.youtube.com/watch?v=qVhG6ZWqD
 - Station Sim
 - Make tensor model
 - Deploy to MuSystem
+
+
+Prism Protos:
+Alpha
+Gamma
+Beta
+Theta
+Phi
+Psi
+Mu
+Sigma
+Lambda
+
+Red Green Blue
+Orange Black Purple
+Cyan Magenta Yellow
+
+Cube
+Sphere
+Cylinder
+Cone
+Pyramid
+Tetrahedron
+Octahedron
+Dodecahedron
+Icosahedron
