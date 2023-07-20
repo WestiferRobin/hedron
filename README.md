@@ -6,11 +6,11 @@ look up this tutorial for HedronChess: https://www.youtube.com/watch?v=qVhG6ZWqD
 - Ship Sim
 - Station Battle
 - Station Sim
-- Make tensor model
+- Link with mu-prism using openai api and tensorflow models
 - Deploy to MuSystem
 
 
-Prism Protos:
+Prisms:
 Alpha
 Gamma
 Beta
@@ -30,7 +30,10 @@ Sphere
 Cylinder
 Cone
 Pyramid
-Tetrahedron
-Octahedron
-Dodecahedron
-Icosahedron
+Tetra-hedron
+Octa-hedron
+Dodeca-hedron
+Icosa-hedron
+
+TODO: 
+- Refactor ship to have 1x2 and 2x2 rooms. Note that you'll need position and door openings as well. Consider on making 
