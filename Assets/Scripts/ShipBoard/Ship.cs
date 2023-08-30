@@ -136,20 +136,20 @@ public class Ship : MonoBehaviour
 
         floorCount++;
         var floorOne = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorOne, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorOne, 5, 5);
         floorOne.transform.position = new Vector3(0, 0, 0);
         floorOne.transform.SetParent(hallway.transform);
         Floors.Add(floorOne);
 
         floorCount++;
         var floorTwo = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorTwo, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorTwo, 5, 5);
         floorTwo.transform.position = new Vector3(0, 0, 5);
         floorTwo.transform.SetParent(hallway.transform);
         Floors.Add(floorTwo);
 
         for (int index = 0; index < 6; index++) {
-            var wall = gameObject.GetComponent<Board>().InitalizeWall();
+            var wall = gameObject.GetComponent<ShipBoard>().InitalizeWall();
             Vector3 position = Vector3.zero;
             Vector3 rotation = Vector3.zero;
             switch (index) {
@@ -193,34 +193,34 @@ public class Ship : MonoBehaviour
 
         floorCount++;
         var floorOne = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorOne, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorOne, 5, 5);
         floorOne.transform.position = new Vector3(0, 0, 0);
         floorOne.transform.SetParent(room.transform);
         Floors.Add(floorOne);
 
         floorCount++;
         var floorTwo = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorTwo, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorTwo, 5, 5);
         floorTwo.transform.position = new Vector3(5, 0, 0);
         floorTwo.transform.SetParent(room.transform);
         Floors.Add(floorTwo);
 
         floorCount++;
         var floorThree = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorThree, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorThree, 5, 5);
         floorThree.transform.position = new Vector3(5, 0, 5);
         floorThree.transform.SetParent(room.transform);
         Floors.Add(floorThree);
 
         floorCount++;
         var floorFour = new GameObject($"Floor {floorCount}");
-        gameObject.GetComponent<Board>().InitalizeTiles(floorFour, 5, 5);
+        gameObject.GetComponent<ShipBoard>().InitalizeTiles(floorFour, 5, 5);
         floorFour.transform.position = new Vector3(0, 0, 5);
         floorFour.transform.SetParent(room.transform);
         Floors.Add(floorFour);
 
         for (int index = 0; index < 8; index++) {
-            var wall = gameObject.GetComponent<Board>().InitalizeWall();
+            var wall = gameObject.GetComponent<ShipBoard>().InitalizeWall();
             Vector3 position = Vector3.zero;
             Vector3 rotation = Vector3.zero;
             switch (index) {
@@ -266,11 +266,11 @@ public class Ship : MonoBehaviour
     }
 
     public GameObject BuildWall() {
-        return gameObject.GetComponent<Board>().InitalizeWall();
+        return gameObject.GetComponent<ShipBoard>().InitalizeWall();
     }
 
     public GameObject BuildDoor() {
-        return gameObject.GetComponent<Board>().InitalizeDoor();
+        return gameObject.GetComponent<ShipBoard>().InitalizeDoor();
     }
 
     private void AddDoors() {
