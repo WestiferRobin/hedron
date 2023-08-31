@@ -26,4 +26,24 @@ public class Tile : MonoBehaviour
         // Revert the color of the tile back to its original color
         tileRenderer.material.color = originalColor;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        string name = collision.gameObject.name;
+        if (collision.gameObject.CompareTag("Prism"))
+        {
+            // Handle collision behavior with Prism here
+            Debug.Log($"{name} collided with the tile!");
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        string name = collision.gameObject.name;
+        if (collision.gameObject.CompareTag("Prism"))
+        {
+            // Handle collision exit behavior with Prism here
+            Debug.Log($"{name} exited the tile!");
+        }
+    }
 }
