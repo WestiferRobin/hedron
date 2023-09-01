@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEditor;
 using UnityEngine;
@@ -15,10 +16,112 @@ public class Prism : MonoBehaviour
     public PrismGender Gender { get; private set; }
     public PrismName Name { get; private set; }
 
+    private Color primaryColor;
+    private Color secondaryColor;
+    private Color selectorColor = Color.yellow;
+
+    private Vector3 targetTilePosition;
+    private bool isMoving = false;
+    private bool isSelected = false;
+
+    private LineRenderer laserRenderer;
+    private bool isFiringLaser = false;
+
+
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!isMoving)
+            {
+                // Check if the click hits a valid tile (you may need to implement this logic)
+                if (TrySelectTile(out targetTilePosition))
+                {
+                    // Set the move flag to true
+                    isMoving = true;
+                }
+            }
+        }
+
+        if (isMoving)
+        {
+            // Calculate and perform Prism movement logic here
+            Move(targetTilePosition);
+        }
+    }
+
+    private bool TrySelectTile(out Vector3 tilePosition)
+    {
+        tilePosition = Vector3.zero;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Tile tile = hit.collider.GetComponent<Tile>();
+            if (tile != null)
+            {
+                tilePosition = tile.transform.position;
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     public void Start()
     {
+        Renderer myRenderer = GetComponent<Renderer>();
+
+        if (myRenderer != null)
+        {
+            Material primary = myRenderer.materials[0];
+            primaryColor = primary.color;
+            Material secondary = myRenderer.materials[1];
+            secondaryColor = secondary.color;
+            var childrenSize = this.transform.childCount;
+            for (int i = 0; i < childrenSize; i++)
+            {
+                var child = this.transform.GetChild(i);
+                var childRenderer = child.GetComponent<Renderer>();
+                if (childRenderer != null)
+                {
+                    if (child.name.ToUpper().Contains("SPHERE"))
+                    {
+                        childRenderer.material = secondary;
+                    }
+                    else
+                    {
+                        childRenderer.material = primary;
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Renderer component not found on this GameObject.");
+        }
         this.InitalizePrism();
+    }
+
+    public void OnMouseDown()
+    {
+        Renderer myRenderer = GetComponent<Renderer>();
+        if (myRenderer != null )
+        {
+            myRenderer.materials[0].color = selectorColor;
+            myRenderer.materials[1].color = selectorColor;
+        }
+    }
+
+    public void OnMouseUp()
+    {
+        Renderer myRenderer = GetComponent<Renderer>();
+        if ( myRenderer != null )
+        {
+            myRenderer.materials[0].color = primaryColor;
+            myRenderer.materials[1].color = secondaryColor;
+        }
     }
 
     public void InitalizePrism(PrismName name = null, PrismGender gender = PrismGender.Unknown, PrismStats stats = null)
@@ -78,11 +181,6 @@ public class Prism : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        // Implement the update logic
-    }
-
     public bool IsDamaged()
     {
         return Body.IsDamaged();
@@ -118,15 +216,31 @@ public class Prism : MonoBehaviour
         return true;
     }
 
-    public void Move(int? x = null, int? y = null)
+    public void Move(Vector3 targetPosition)
     {
-        if (x == null && y == null)
+        // Calculate the distance between current and target positions
+        float distance = Vector3.Distance(transform.position, targetPosition);
+
+        // Move the Prism towards the target tile
+        float moveSpeed = 5f; // Adjust the speed as needed
+        float step = moveSpeed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+
+        // Check if the Prism has reached the target tile
+        if (distance < 0.1f)
         {
-            int scaler = UnityEngine.Random.Range(1, 4);
-            x = UnityEngine.Random.Range(-1, 2) * scaler + (int) this.transform.position.x;
-            y = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.y;
+            // Reset the move flag
+            isMoving = false;
         }
-        this.transform.position = new Vector3((int)x, (int)y, 0);
+    }
+
+    public void Move()
+    {
+        int scaler = UnityEngine.Random.Range(1, 4);
+        int x = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.x;
+        int z = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.z;
+        var position = new Vector3((int)x, 0, (int)z);
+        Move(position);
     }
 
     public bool InRange(Prism target, float maxRange = 3)
