@@ -1,16 +1,9 @@
 using System;
-using System.Reflection;
-using TMPro;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Analytics;
-using UnityEngine.UIElements;
 
 public class Prism : MonoBehaviour
 {
     public Guid Id { get; private set; }
-    //public BoardPosition Position { get; private set; }
     public PrismBody Body { get; private set; }
     public PrismStats Stats { get; private set; }
     public PrismGender Gender { get; private set; }
@@ -22,12 +15,8 @@ public class Prism : MonoBehaviour
 
     private Vector3 targetTilePosition;
     private bool isMoving = false;
-    private bool isSelected = false;
 
-    private LineRenderer laserRenderer;
-    private bool isFiringLaser = false;
-
-
+    #region Unity Methods
     public void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -151,7 +140,9 @@ public class Prism : MonoBehaviour
             this.Name = name;
         }
     }
+    #endregion
 
+    #region Aux Methods
     public bool Equals(Prism other)
     {
         if (other == null)
@@ -168,7 +159,9 @@ public class Prism : MonoBehaviour
         str += $"Body: {Body}\n";
         return str;
     }
+    #endregion
 
+    #region Combat Methods
     public void ApplyDamage(int damage, BodyPart part)
     {
         if (Body.BodyParts.ContainsKey(part))
@@ -199,21 +192,12 @@ public class Prism : MonoBehaviour
             return;
         Body.Fight(target);
     }
+    #endregion
 
+    #region Movement Methods
     public bool CanMove()
     {
         return Body.BodyParts.ContainsKey(BodyPart.Legs);
-    }
-
-    public bool IsAlive()
-    {
-        if (Body.BodyParts.Count <= 0)
-            return false;
-        if (!Body.BodyParts.ContainsKey(BodyPart.Head))
-            return false;
-        if (!Body.BodyParts.ContainsKey(BodyPart.Torso))
-            return false;
-        return true;
     }
 
     public void Move(Vector3 targetPosition)
@@ -254,9 +238,40 @@ public class Prism : MonoBehaviour
         // Check if the distance is within the specified range
         return distance <= maxRange;
     }
+    #endregion
+
+    #region Health Methods
+    public bool IsAlive()
+    {
+        if (Body.BodyParts.Count <= 0)
+            return false;
+        if (!Body.BodyParts.ContainsKey(BodyPart.Head))
+            return false;
+        if (!Body.BodyParts.ContainsKey(BodyPart.Torso))
+            return false;
+        return true;
+    }
 
     public void Rest()
     {
         Body = new PrismBody();
     }
+    #endregion
+
+    #region Social Methods
+    public void Socialize(Prism otherPrism)
+    {
+        // brig myers
+        // https://www.dreamsaroundtheworld.com/wp-content/uploads/2021/04/Screenshot-2021-04-06-at-11.36.40.png
+        // keep a dictionary of relationships with user
+    }
+
+    public void Breed(Prism parent, bool isRandom = false)
+    {
+        // this should be this.Body.breed(parent.Body)
+        // IN THERE it should doing the gene algro
+        // THEN append and create a family
+        // again it makes sense for the body and social relations
+    }
+    #endregion
 }
