@@ -23,6 +23,7 @@ public class PrismBody
     {
         this.BodyParts = PrismBodyBuilder.CreateDefaultBody();
     }
+
     public bool IsDamaged()
     {
         var defaultParts = PrismBodyBuilder.CreateDefaultBody();
@@ -37,8 +38,19 @@ public class PrismBody
 
     }
 
-    internal void Fight(Prism target)
+    public bool IsAlive()
     {
-        throw new NotImplementedException();
+        if (BodyParts.Count <= 0)
+            return false;
+        if (!BodyParts.ContainsKey(BodyPart.Head))
+            return false;
+        if (!BodyParts.ContainsKey(BodyPart.Torso))
+            return false;
+        return true;
+    }
+
+    public void Rest()
+    {
+        Start();
     }
 }

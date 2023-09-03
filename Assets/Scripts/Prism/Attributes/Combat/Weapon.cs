@@ -1,7 +1,7 @@
 ﻿using System;
-public class NewClass
+public class Weapon
 {
-	public NewClass()
+	public Weapon()
 	{
 	}
 }

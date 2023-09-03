@@ -30,7 +30,7 @@ public class Tile : MonoBehaviour
     private void OnMouseUp()
     {
         // Call a method in the Prism script to handle tile selection
-        Prism prism = FindObjectOfType<Prism>();
+        PrismMovement prism = FindObjectOfType<PrismMovement>();
         if (prism != null)
         {
             prism.Move(this.transform.position);

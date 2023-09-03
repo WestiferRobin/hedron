@@ -1,4 +1,23 @@
-﻿Player vs Enemy:
+﻿PrismModel.cs: This script could handle the core properties and behaviors of the Prism game object, such as its ID, gender, name, basic stats, and the core methods like InitializePrism, ToString, and Equals.
+
+PrismCombat.cs: If your Prism has combat-related functionalities like ApplyDamage, IsDamaged, CanFight, and Fight, you could put these methods in a separate script dedicated to combat behavior.
+
+PrismMovement.cs: For movement-related functions like CanMove, Move, InRange, and maybe Rest, create a separate script for movement logic.
+
+PrismInteraction.cs: If your Prism can interact with other game objects or characters in more complex ways (e.g., socialize or breed), you can create a script for interactions.
+
+PrismUI.cs: If your Prism has UI-related functionalities like displaying its information on the screen or responding to UI events, create a separate script for UI handling.
+
+
+
+
+
+
+
+
+
+
+Player vs Enemy:
     5 Factions vs 5 Factions
     Admin FactionFlag lambda:psi
     Faction FactionFlag alpha:theta
