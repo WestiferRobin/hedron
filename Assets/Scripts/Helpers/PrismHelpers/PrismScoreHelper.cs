@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 internal class PrismScoreHelper
 {
-    internal static int calculateHealthScore(Dictionary<BodyPart, int> defaultParts)
+    internal static int CalculateHealthScore(Dictionary<BodyPart, int> defaultParts)
     {
         /*
          score = 0

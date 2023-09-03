@@ -14,15 +14,15 @@ public class PrismCore : MonoBehaviour
     {
         this.Body ??= new PrismBody();
 
-        this.Stats ??= new DefaultIdentity();
+        this.Stats ??= new PrismStats();
 
         if (this.Gender == PrismGender.Unknown)
         {
-            this.Gender = PrismGenderHelper.RandomPrismGender();
+            this.Gender = PrismGenderFactory.RandomGender();
         }
 
-        string firstName = PrismNameGenerator.RandomFirstName(Gender);
-        string lastName = PrismNameGenerator.RandomLastName();
+        string firstName = PrismNameFactory.RandomFirstName(Gender);
+        string lastName = PrismNameFactory.RandomLastName();
         this.Name ??= new PrismName(firstName, lastName);
         this.transform.name = this.Name.FullName;
     }

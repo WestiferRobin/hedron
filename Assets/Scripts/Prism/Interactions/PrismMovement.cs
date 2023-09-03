@@ -15,9 +15,8 @@ public class PrismMovement : MonoBehaviour
     #region Unity Methods
     public void Start()
     {
-        Renderer myRenderer = GetComponent<Renderer>();
-
-        if (myRenderer != null)
+        
+        if (TryGetComponent<Renderer>(out var myRenderer))
         {
             Material primary = myRenderer.materials[0];
             primaryColor = primary.color;
@@ -66,7 +65,7 @@ public class PrismMovement : MonoBehaviour
                 if (TrySelectTile(out targetTilePosition))
                 {
                     // Set the move flag to true
-                    isMoving = true;
+                    isMoving = CanMove();
                 }
             }
         }
@@ -97,8 +96,7 @@ public class PrismMovement : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Renderer myRenderer = GetComponent<Renderer>();
-        if (myRenderer != null)
+        if (TryGetComponent<Renderer>(out var myRenderer))
         {
             myRenderer.materials[0].color = selectorColor;
             myRenderer.materials[1].color = selectorColor;
@@ -107,8 +105,7 @@ public class PrismMovement : MonoBehaviour
 
     public void OnMouseUp()
     {
-        Renderer myRenderer = GetComponent<Renderer>();
-        if (myRenderer != null)
+        if (TryGetComponent<Renderer>(out var myRenderer))
         {
             myRenderer.materials[0].color = primaryColor;
             myRenderer.materials[1].color = secondaryColor;
@@ -145,7 +142,7 @@ public class PrismMovement : MonoBehaviour
         int scaler = UnityEngine.Random.Range(1, 4);
         int x = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.x;
         int z = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.z;
-        var position = new Vector3((int)x, 0, (int)z);
+        var position = new Vector3(x, 0, z);
         Move(position);
     }
 

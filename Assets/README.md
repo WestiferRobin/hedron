@@ -1,9 +1,13 @@
 ﻿# Hedron
 
-## TODOs
+
+## In Progress
 - Get movement done for single prism
     - Ensure that it goes in a range and move like xcom 2
     - Have this work for an Ally and Enemy
+
+
+## TODOs
 - Get combat done for 2 single prisms
     - Ally vs Enemy
     - Ally can be computer or player
@@ -25,9 +29,13 @@
     - Should also monitor Needs too
 - Hedron vs Hedron
     - Move
+        - Tensorflow
     - Combat
+        - Tensorflow
     - Social
+        - GPT
     - Needs
+        - Tensorflow
 - Board Integration: 100 Hedrons vs 100 Hedrons
     - Simulation needs to be the same as if a player does it
         - Speed up version of a player game
@@ -46,7 +54,35 @@
             - Normal: 200x200 tiles
             - Large: 220×220 tiles
             - Giant: 240×240 tiles
-
+- Bases
+    - Outpost
+    - Colony
+    - Town
+    - City
+    - Citadel
+- Vehicles
+    - Craft (Prism Vehicles)
+        - Tanks
+        - Speeders
+        - Shuttles
+        - Fighters
+        - Carriers
+    - Ships (Hedron Vehicles)
+        - Freighter
+        - Corvette
+        - Frigate
+        - Capital
+        - Dreadnought
+- Solar
+    - Remake the solar system
+    - Apply Bases and Vehicles
+        - Work and make Fortress per Society
+    - Work on Age of Empires and Red Alert mechanics
+    - Test 100 v 100 Hedrons
+- Galaxy
+    - 3x3x3 Galaxies
+        - watch simulation
+        - play game
 
 
 

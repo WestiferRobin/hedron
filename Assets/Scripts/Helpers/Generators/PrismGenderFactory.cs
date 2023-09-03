@@ -1,16 +1,8 @@
 ﻿using System;
 
-
-public enum PrismGender
+public class PrismGenderFactory
 {
-    Unknown = 0,
-    Male = 1,
-    Female = 2
-}
-
-public class PrismGenderHelper
-{
-    public static PrismGender RandomPrismGender()
+    public static PrismGender RandomGender()
     {
         var array = Enum.GetValues(typeof(PrismGender));
         int randomIndex = new Random().Next(0, array.Length);

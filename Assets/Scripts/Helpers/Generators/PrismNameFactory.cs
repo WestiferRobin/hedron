@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class PrismNameGenerator
+public class PrismNameFactory
 {
     public static List<string> MALE_NAMES = new()
     {

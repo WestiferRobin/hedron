@@ -4,6 +4,7 @@ using UnityEngine;
 public class PrismCombat : MonoBehaviour
 {
     private PrismCore model;
+
     public void Start()
     {
         if (TryGetComponent<PrismCore>(out var foundModel))

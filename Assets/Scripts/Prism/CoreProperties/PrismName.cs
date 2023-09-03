@@ -16,8 +16,8 @@ public class PrismName
 
     public PrismName(PrismGender gender, string firstName = null, string lastName = null)
     {
-        firstName ??= PrismNameGenerator.RandomFirstName(gender);
-        lastName ??= PrismNameGenerator.RandomLastName();
+        firstName ??= PrismNameFactory.RandomFirstName(gender);
+        lastName ??= PrismNameFactory.RandomLastName();
         this.FirstName = firstName;
         this.lastName = lastName;
     }

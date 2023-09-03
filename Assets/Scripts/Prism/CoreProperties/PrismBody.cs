@@ -1,8 +1,4 @@
-﻿using Assets.Scripts.Prism;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 public enum BodyPart
 {
@@ -13,22 +9,21 @@ public enum BodyPart
     Legs = 4,
 }
 
-
 public class PrismBody
 {
 
     public Dictionary<BodyPart, int> BodyParts { get; internal set; }
 
-    public void Start()
+    public PrismBody()
     {
-        this.BodyParts = PrismBodyBuilder.CreateDefaultBody();
+        this.BodyParts = PrismBodyFactory.GeneratePrismBody();
     }
 
     public bool IsDamaged()
     {
-        var defaultParts = PrismBodyBuilder.CreateDefaultBody();
-        var defaultHealthScore = PrismScoreHelper.calculateHealthScore(defaultParts);
-        var ourHealthScore = PrismScoreHelper.calculateHealthScore(this.BodyParts);
+        var defaultParts = PrismBodyFactory.GeneratePrismBody();
+        var defaultHealthScore = PrismScoreHelper.CalculateHealthScore(defaultParts);
+        var ourHealthScore = PrismScoreHelper.CalculateHealthScore(this.BodyParts);
         if (defaultHealthScore <= 0)
         {
             return true;
@@ -51,6 +46,6 @@ public class PrismBody
 
     public void Rest()
     {
-        Start();
+        this.BodyParts = PrismBodyFactory.GeneratePrismBody();
     }
 }
