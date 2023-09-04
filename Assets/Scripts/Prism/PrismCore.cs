@@ -9,7 +9,6 @@ public class PrismCore : MonoBehaviour
     public PrismGender Gender { get; private set; }
     public PrismName Name { get; private set; }
 
-    #region Unity Methods
     public void Start()
     {
         this.Body ??= new PrismBody();
@@ -31,24 +30,4 @@ public class PrismCore : MonoBehaviour
     {
         
     }
-    #endregion
-
-    #region Aux Methods
-    public bool Equals(PrismCore other)
-    {
-        if (other == null)
-            return false;
-
-        return other.Id == Id;
-    }
-
-    public override string ToString()
-    {
-        string str = $"Name: {Name}\n";
-        str += $"Gender: {Gender}\n";
-        str += $"Position: {this.transform.position}\n";
-        str += $"Body: {Body}\n";
-        return str;
-    }
-    #endregion
 }

@@ -5,8 +5,11 @@
     Dexterity: Shooting Damage
     Constitution: Health capacity
     Wisdom: Magic capacity
-    Intelligence: Logic and Robotics
+    Intelligence: Logic
     Charisma: Speech
-    Agility: Movement and Stealth
+    Agility: Movement
      */
+    public int Strength = 3;
+    public int Dexterity = 3;
+    public int Agility = 3;
 }

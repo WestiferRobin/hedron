@@ -5,9 +5,10 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     private Renderer tileRenderer;
-    private Color originalColor;
+    public Color originalColor;
+    public Color selectorColor = Color.cyan;
 
-    private void Start()
+    public void Start()
     {
         // Get the renderer component
         tileRenderer = GetComponent<Renderer>();
@@ -15,19 +16,28 @@ public class Tile : MonoBehaviour
         originalColor = tileRenderer.material.color;
     }
 
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
-        // Change the color of the tile to indicate hover
-        tileRenderer.material.color = Color.yellow;
+        if (tileRenderer.material.color == originalColor)
+        {
+            SetColor(selectorColor);
+        }
     }
 
-    private void OnMouseExit()
+    public void OnMouseExit()
     {
-        // Revert the color of the tile back to its original color
-        tileRenderer.material.color = originalColor;
+        if (tileRenderer.material.color == selectorColor)
+        {
+            SetColor(originalColor);
+        }
     }
 
-    private void OnMouseUp()
+    public void SetColor(Color color)
+    {
+        tileRenderer.material.color = color;
+    }
+
+    public void OnMouseUp()
     {
         // Call a method in the Prism script to handle tile selection
         PrismMovement prism = FindObjectOfType<PrismMovement>();

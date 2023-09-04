@@ -11,7 +11,7 @@ public class PrismName
     {
         this.FirstName = firstName;
         this.lastName = lastName;
-        this.FullName = $"{this.FirstName}, {this.lastName}";
+        this.FullName = $"{this.FirstName} {this.lastName}";
     }
 
     public PrismName(PrismGender gender, string firstName = null, string lastName = null)

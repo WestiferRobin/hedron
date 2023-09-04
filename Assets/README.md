@@ -2,32 +2,39 @@
 
 
 ## In Progress
-- Get movement done for single prism
-    - Ensure that it goes in a range and move like xcom 2
-    - Have this work for an Ally and Enemy
-
-
-## TODOs
 - Get combat done for 2 single prisms
     - Ally vs Enemy
     - Ally can be computer or player
     - Enemy can be player
     - GameObjects
+        - NOTE: Ensure that TextUI sees stuff
         - Items
             - Packs
         - Weapons
             - All Valorant Weapons
+            - See if you can do firing animation
         - Armor
             - XCOM and KOTOR armor
         - Classes
             - XCOM and KOTOR classes
             - Introduce Stats
+## Bugs
+- Movement
+    - Tile selection needs to be cleared
+    - See if yellow can be better for selection
+    - Add walking animation
+- Camera
+    - Make it like Sims and XCOM
+    - Probably can be done in Hedron?
+
+## TODOs
 - Get socalize done for 2 prisms
     - Able to Socalize to enemies, accuantices, and best friends
     - Also include a love system for Breeding
         - Work on Gene Algorithm and create families
     - Should also monitor Needs too
 - Hedron vs Hedron
+    - FIX BUGS BEFORE CONTINUING
     - Move
         - Tensorflow
     - Combat
@@ -41,7 +48,7 @@
         - Speed up version of a player game
     - Board Grid Tests
         - Space Size:
-            - Default 10x10 (Should be done already)
+            - Default 10x10
             - Room: 2x2 Grid => 20x20 tiles
             - Hallway: 2x1 and 1x2 Grid => 20x10 and 10x20 tiles
             - Map for a ship

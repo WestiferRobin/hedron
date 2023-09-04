@@ -3,12 +3,12 @@ using System.Collections;
 
 public class PrismInteraction : MonoBehaviour
 {
-    private PrismCore core;
-    private PrismCombat combat;
-    private PrismSocial social;
-    private PrismNeeds needs;
-    private PrismMovement movement;
-    private PrismUI ui;
+    public PrismCore core;
+    public PrismCombat combat;
+    public PrismSocial social;
+    public PrismNeeds needs;
+    public PrismMovement movement;
+    public PrismUI ui;
 
     // Use this for initialization
     void Start()

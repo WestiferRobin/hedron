@@ -1,0 +1,44 @@
+﻿
+Hedron vs Hedron:
+- Each player has a hedron
+    - A hedron has 5 prisms
+    - Each Prism has a turn
+        - 2 Action Points
+            - 1 Cost
+                - Move, Reload, Item
+            - 2 Cost
+                - Shooting
+- Each player has a turn for each Prism in a Hedron
+
+Prism: (for 
+    - Level: 1-12
+    - Body: 10
+        - Head 3
+        - Torso 3
+        - Legs 2
+        - Arms 2
+    - Armor: 5
+    - Movement: 5
+    - Range: 5
+
+
+Combat Rank
+1. Private 
+2. Corporal
+3. Lance
+4. Sergeant
+5. Lieutenant
+6. Commander
+7. Captain
+8. Colonel
+9. Major
+10. Arch
+
+Guardian Sub Rank
+1. Apprentice
+2. Journeyman
+3. Adept
+4. Diciple
+4. Master
+
+Guardian => Depends on the initiation
