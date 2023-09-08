@@ -441,6 +441,10 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 903237985}
+    - target: {fileID: 3159181032202207333, guid: 27921dc7055b8437eb137af0b49df4e6, type: 3}
+      propertyPath: numberOfPrisms
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3918478852539414144, guid: 27921dc7055b8437eb137af0b49df4e6, type: 3}
       propertyPath: m_Name
       value: Hedron
