@@ -17,7 +17,8 @@ public class PrismCore : MonoBehaviour
 
         if (this.Gender == PrismGender.Unknown)
         {
-            this.Gender = PrismGenderFactory.RandomGender();
+            // TODO: Change this when Female Human sprite is ready
+            this.Gender = PrismGender.Male;//PrismGenderFactory.RandomGender();
         }
 
         string firstName = PrismNameFactory.RandomFirstName(Gender);

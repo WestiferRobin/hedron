@@ -8,7 +8,6 @@ public class PrismMovement : MonoBehaviour
     [SerializeField] public Tilemap tilemap;
     [SerializeField] private float moveSpeed = 2.0f;
 
-    private Vector3Int currentTile;
     private Vector3 targetPosition;
     private bool isMoving = false;
 
@@ -22,8 +21,6 @@ public class PrismMovement : MonoBehaviour
         {
             throw new ArgumentNullException("PrismModel not found for PrismMovement");
         }
-        // Initialize the current tile based on the starting position of the Prism
-        currentTile = tilemap.WorldToCell(transform.position);
         targetPosition = transform.position;
     }
 
@@ -39,6 +36,7 @@ public class PrismMovement : MonoBehaviour
             Vector3Int targetTile = tilemap.WorldToCell(mouseWorldPos);
 
             // Check if the target tile is a valid tile within the Tilemap
+            // TODO: Do this with InRange too as well
             if (IsPositionValid(targetTile))
             {
                 // Set the target position to the center of the target tile
@@ -55,6 +53,7 @@ public class PrismMovement : MonoBehaviour
             Move(targetPosition);
         }
     }
+
     #region Movement Methods
     public bool CanMove()
     {
