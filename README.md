@@ -1,5 +1,10 @@
 # Hedron
 
+## Target Platforms
+- Web => MuSystem
+- iOS => iPad initally
+- PC/macos => local build
+- Total: WebGL, iOS, Macos, Windows, and Linux
 
 ## In Progress
 - Get combat done for 2 single prisms
@@ -22,10 +27,9 @@
 - Movement
     - Tile selection needs to be cleared
     - See if yellow can be better for selection
-    - Add walking animation
+    - Add walking animation with sprites
 - Camera
     - Make it like Sims and XCOM
-    - Probably can be done in Hedron?
 
 ## TODOs
 - Get socalize done for 2 prisms
@@ -33,6 +37,11 @@
     - Also include a love system for Breeding
         - Work on Gene Algorithm and create families
     - Should also monitor Needs too
+    - Finish Sprite animations and add diversity into the mix
+        - 10 Factions => 5 Races per Player
+        - Ideas:
+            - Aliens vs Humans?
+            - Alien Federation with Humans vs Annunaki? => Solar Federation vs Annunaki Empire
 - Hedron vs Hedron
     - FIX BUGS BEFORE CONTINUING
     - Move

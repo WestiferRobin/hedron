@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PrismSocial : MonoBehaviour
 {
+    private Dictionary<Guid, int> relationships = new();
+
     public void Start()
     {
         
