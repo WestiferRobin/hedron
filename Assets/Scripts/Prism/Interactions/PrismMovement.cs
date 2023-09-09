@@ -5,14 +5,33 @@ using UnityEngine.Tilemaps;
 public class PrismMovement : MonoBehaviour
 {
     private PrismCore model;
-    [SerializeField] public Tilemap tilemap;
-    [SerializeField] private float moveSpeed = 2.0f;
+    public Tilemap tilemap;
+    public float moveSpeed = 15.0f;
 
-    private Vector3 targetPosition;
+    private Vector2 targetPosition;
     private bool isMoving = false;
+
+    public Rigidbody2D rigidBody;
+    public Animator animator;
 
     public void Start()
     {
+        if (TryGetComponent<Rigidbody2D>(out var foundRigidBody))
+        {
+            this.rigidBody = foundRigidBody;
+        }
+        else
+        {
+            throw new ArgumentNullException("Rigidbody2D not found for PrismMovement");
+        }
+        if (TryGetComponent<Animator>(out var foundAnimator))
+        {
+            this.animator = foundAnimator;
+        }
+        else
+        {
+            throw new ArgumentNullException("Animator not found for PrismMovement");
+        }
         if (TryGetComponent<PrismCore>(out var core))
         {
             model = core;
@@ -21,7 +40,7 @@ public class PrismMovement : MonoBehaviour
         {
             throw new ArgumentNullException("PrismModel not found for PrismMovement");
         }
-        targetPosition = transform.position;
+        targetPosition = rigidBody.position; // Initialize the target position with the current position
     }
 
     private void Update()
@@ -30,13 +49,12 @@ public class PrismMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // Get the mouse position in world space
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             // Convert the mouse position to the nearest tile position
             Vector3Int targetTile = tilemap.WorldToCell(mouseWorldPos);
 
             // Check if the target tile is a valid tile within the Tilemap
-            // TODO: Do this with InRange too as well
             if (IsPositionValid(targetTile))
             {
                 // Set the target position to the center of the target tile
@@ -60,46 +78,39 @@ public class PrismMovement : MonoBehaviour
         return model.Body.BodyParts.ContainsKey(BodyPart.Legs);
     }
 
-    private bool IsPositionValid(Vector3Int position)
+    public bool IsPositionValid(Vector3Int position)
     {
         // Check if the position is within the bounds of the Tilemap
         return tilemap.HasTile(position);
     }
 
-    public bool Move(Vector3 target)
+
+    public bool IsPositionValid(Vector3 position)
     {
-        // Calculate the distance between current and target positions
-        float distance = Vector3.Distance(transform.position, target);
-
-        // Move the Prism towards the target tile
-        float step = moveSpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target, step);
-
-        return distance >= 0.1f;
+        var positionInt = new Vector3Int((int)position.x, (int)position.y);
+        return IsPositionValid(positionInt);
     }
 
-    public bool Move()
+    public void Move(Vector2 target)
     {
-        int scaler = UnityEngine.Random.Range(1, 4);
-        int x = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.x;
-        int z = UnityEngine.Random.Range(-1, 2) * scaler + (int)this.transform.position.z;
-        var position = new Vector3(x, 0, z);
-        return Move(position);
-    }
+        // Calculate the direction from current position to target position
+        Vector2 direction = (target - rigidBody.position).normalized;
 
-    public bool InRange(Vector3 target, float maxRange)
-    {
-        int xPos = (int)transform.position.x;
-        int zPos = (int)transform.position.z;
-        int botX = xPos - (int)maxRange;
-        int topX = xPos + (int)maxRange;
-        int botZ = zPos - (int)maxRange;
-        int topZ = zPos + (int)maxRange;
-        int targetX = (int)target.x;
-        int targetZ = (int)target.z;
-        return botX <= targetX && targetX <= topX &&
-            botZ <= targetZ && targetZ <= topZ;
+        // Calculate the new position
+        Vector2 newPosition = rigidBody.position + moveSpeed * Time.deltaTime * direction;
+        rigidBody.MovePosition(newPosition);
+
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+
+        var distance = Vector2.Distance(rigidBody.position, target);
+
+        // Check if we have reached the target position
+        if (distance < 0.1f)
+        {
+            isMoving = false;
+        }
+        animator.SetFloat("Speed", isMoving ? 1 : 0);
     }
     #endregion
 }
-

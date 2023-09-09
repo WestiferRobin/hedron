@@ -19,7 +19,7 @@ public class Hedron : MonoBehaviour
     {
         for (int i = 0; i < numberOfPrisms; i++)
         {
-            Vector3 spawnPosition = transform.position + new Vector3(i + 0.5f, 1, 0); // Adjust the spacing as needed
+            Vector3 spawnPosition = transform.position + new Vector3(i + 4.5f, 4, 0); // Adjust the spacing as needed
             if (prismPrefab.TryGetComponent<PrismMovement>(out var prismMovement))
             {
                 prismMovement.tilemap = tilemap;

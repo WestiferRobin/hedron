@@ -70,7 +70,8 @@ public class PrismUI : MonoBehaviour
                     foreach (Transform tile in row)
                     {
                         int maxRange = interaction.GetCore().Stats.Agility;
-                        if (interaction.GetMovement().InRange(tile.position, maxRange))
+                        //if (interaction.GetMovement().InRange(tile.position, maxRange))
+                        if (interaction.GetMovement().IsPositionValid(tile.position))
                         {
                             if (tile.TryGetComponent<Tile>(out var tileComponet))
                             {
@@ -110,7 +111,7 @@ public class PrismUI : MonoBehaviour
         if (isMoving)
         {
             // Calculate and perform Prism movement logic here
-            isMoving = interaction.GetMovement().Move(targetTile.transform.position);
+            isMoving = interaction.GetMovement().IsPositionValid(targetTile.transform.position);
             targetTile.SetColor(targetTile.originalColor);
         }
     }

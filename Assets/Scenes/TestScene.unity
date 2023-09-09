@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: -10}
+  m_LocalPosition: {x: 2, y: 2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -229,8 +229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 32
-  m_RefResolutionX: 1050
-  m_RefResolutionY: 1680
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
   m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 0
@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 903237985}
+    - target: {fileID: 3159181032202207333, guid: 27921dc7055b8437eb137af0b49df4e6, type: 3}
+      propertyPath: prismPrefab
+      value: 
+      objectReference: {fileID: 2143418149093646901, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
     - target: {fileID: 3159181032202207333, guid: 27921dc7055b8437eb137af0b49df4e6, type: 3}
       propertyPath: numberOfPrisms
       value: 1

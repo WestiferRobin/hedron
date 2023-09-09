@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f56243716ff74ad7a3c8ba437c8f6f7
+guid: 118046c1305644942a56b631c92dd35a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -154,17 +154,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30aa299d16a654504b11a632a54b46d7
-      internalID: 14783016
+      spriteID: 716d03bedad9e4e289ce958956fef7bd
+      internalID: 2002649019
       vertices: []
       indices: 
       edges: []
@@ -173,19 +173,19 @@ TextureImporter:
       name: Human_Man-Sheet_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128d0bf47af034940817fadf27db00aa
-      internalID: 184800744
+      spriteID: 3cf5209327a794cf0bb025df66140e5a
+      internalID: -1525926325
       vertices: []
       indices: 
       edges: []
@@ -194,19 +194,19 @@ TextureImporter:
       name: Human_Man-Sheet_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 975981415b72741488cb0af135b871e4
-      internalID: 1791462443
+      spriteID: ed5cb378cd576489fb39ed8d2f31f6aa
+      internalID: -1611784709
       vertices: []
       indices: 
       edges: []
@@ -215,19 +215,19 @@ TextureImporter:
       name: Human_Man-Sheet_3
       rect:
         serializedVersion: 2
-        x: 193
+        x: 48
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4e2e748fd9834b5188b7f9cce047203
-      internalID: -50813217
+      spriteID: eed1f2e1db4f7435fb018d353991ff70
+      internalID: 28568515
       vertices: []
       indices: 
       edges: []
@@ -236,19 +236,19 @@ TextureImporter:
       name: Human_Man-Sheet_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0025cbfbddb404fe0b1300c510f4ebcb
-      internalID: 177936628
+      spriteID: baa16755ae907467fa7f820c12daf2ec
+      internalID: -1583567241
       vertices: []
       indices: 
       edges: []
@@ -257,19 +257,19 @@ TextureImporter:
       name: Human_Man-Sheet_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 80
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19e3760c59ba8463c83f914bb418be8b
-      internalID: -96335969
+      spriteID: d468370209acf4e1d9077aca938fabbb
+      internalID: 2053748321
       vertices: []
       indices: 
       edges: []
@@ -278,19 +278,19 @@ TextureImporter:
       name: Human_Man-Sheet_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 96
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e0c17be2823468e91f1483540c53d1
-      internalID: -1364254055
+      spriteID: 85d68fae58f5b477bb9b4d4e7e46c0d5
+      internalID: 260119965
       vertices: []
       indices: 
       edges: []
@@ -299,19 +299,19 @@ TextureImporter:
       name: Human_Man-Sheet_7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 112
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ee75958aa0a49b1ba3f464c51edbf1
-      internalID: -2046441760
+      spriteID: c05fccf6a9cba4bbbb2d869cb67196db
+      internalID: 1766688410
       vertices: []
       indices: 
       edges: []
@@ -320,19 +320,19 @@ TextureImporter:
       name: Human_Man-Sheet_8
       rect:
         serializedVersion: 2
-        x: 512
+        x: 128
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11b8c8c1799648968fba27ebb58af39
-      internalID: -884342282
+      spriteID: 02aec7ec50c3b435c923f139ea27c2da
+      internalID: -706141321
       vertices: []
       indices: 
       edges: []
@@ -341,19 +341,19 @@ TextureImporter:
       name: Human_Man-Sheet_9
       rect:
         serializedVersion: 2
-        x: 576
+        x: 144
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53eaddf39f974a15b68a4c666b96edb
-      internalID: 1504217534
+      spriteID: d740979a1bfa444cebc5be86b928fb01
+      internalID: 1394483941
       vertices: []
       indices: 
       edges: []
@@ -362,19 +362,19 @@ TextureImporter:
       name: Human_Man-Sheet_10
       rect:
         serializedVersion: 2
-        x: 640
+        x: 160
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56ba2621a7b8f40629d9250399613ea2
-      internalID: -1373840208
+      spriteID: c37c06f85f38445f3aada761cbcbd0de
+      internalID: -1281453454
       vertices: []
       indices: 
       edges: []
@@ -383,19 +383,19 @@ TextureImporter:
       name: Human_Man-Sheet_11
       rect:
         serializedVersion: 2
-        x: 704
+        x: 176
         y: 0
-        width: 64
-        height: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f596a7390ef51421da16bdc1702831f5
-      internalID: -610441995
+      spriteID: 79251c2296ee64460af74b19d930acf6
+      internalID: -514441937
       vertices: []
       indices: 
       edges: []
@@ -411,18 +411,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Human_Man-Sheet_0: 14783016
-      Human_Man-Sheet_1: 184800744
-      Human_Man-Sheet_10: -1373840208
-      Human_Man-Sheet_11: -610441995
-      Human_Man-Sheet_2: 1791462443
-      Human_Man-Sheet_3: -50813217
-      Human_Man-Sheet_4: 177936628
-      Human_Man-Sheet_5: -96335969
-      Human_Man-Sheet_6: -1364254055
-      Human_Man-Sheet_7: -2046441760
-      Human_Man-Sheet_8: -884342282
-      Human_Man-Sheet_9: 1504217534
+      Human_Man-Sheet_0: 2002649019
+      Human_Man-Sheet_1: -1525926325
+      Human_Man-Sheet_10: -1281453454
+      Human_Man-Sheet_11: -514441937
+      Human_Man-Sheet_2: -1611784709
+      Human_Man-Sheet_3: 28568515
+      Human_Man-Sheet_4: -1583567241
+      Human_Man-Sheet_5: 2053748321
+      Human_Man-Sheet_6: 260119965
+      Human_Man-Sheet_7: 1766688410
+      Human_Man-Sheet_8: -706141321
+      Human_Man-Sheet_9: 1394483941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

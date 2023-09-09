@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 28, y: 40}
   - name: Human_Man_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: -0.035714287}
+    pivot: {x: 0.5, y: -0.071428575}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -404,7 +404,7 @@ ScriptedImporter:
       frameIndex: 4
       cellRect:
         x: 0
-        y: 1
+        y: 2
         width: 16
         height: 28
       spriteId: e8448294cc0f887468ebfffd7baa68f9

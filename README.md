@@ -6,42 +6,35 @@
 - PC/macos => local build
 - Total: WebGL, iOS, Macos, Windows, and Linux
 
+## Art References
+- https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fmuz5w4ol34e91.gif%3Fformat%3Dpng8%26s%3Dde66879400cdaf72a9af8309ba3849ce359ccd72
+- https://2.bp.blogspot.com/-8-sbv4Zarwo/Vup7KQjQBuI/AAAAAAAADGI/GHRaw5q22D8JLIfeNQI9gQoMk4y5i6PYw/s1600/107-02.jpg
+- https://i.pinimg.com/1200x/88/14/25/8814256d2a3e46c30dac00d317e80871.jpg
+
 ## In Progress
 - Get combat done for 2 single prisms
+    - Introduce UI Text Hub for Combat
     - Ally vs Enemy
-    - Ally can be computer or player
-    - Enemy can be player
-    - GameObjects
-        - NOTE: Ensure that TextUI sees stuff
-        - Items
-            - Packs
-        - Weapons
-            - All Valorant Weapons
-            - See if you can do firing animation
-        - Armor
-            - XCOM and KOTOR armor
-        - Classes
-            - XCOM and KOTOR classes
-            - Introduce Stats
-## Bugs
-- Movement
-    - Tile selection needs to be cleared
-    - See if yellow can be better for selection
-    - Add walking animation with sprites
-- Camera
-    - Make it like Sims and XCOM
+        - Ally can be computer or player
+        - Enemy can be player
+    - Assets
+        - Need 5 Ally Races
+        - Need 5 Enemy Races
+        - Need GameNotes.txt implemented with some assets
+            - Include Animations for shooting guns
+            - Animations for using Items
+    - Movement
+        - Tile selection needs to be polished
+            - Player is moving off the tilemap
+            - Player and Tile need better collision
 
 ## TODOs
 - Get socalize done for 2 prisms
+    - Add Social Hub for UI Text Hub
     - Able to Socalize to enemies, accuantices, and best friends
     - Also include a love system for Breeding
         - Work on Gene Algorithm and create families
     - Should also monitor Needs too
-    - Finish Sprite animations and add diversity into the mix
-        - 10 Factions => 5 Races per Player
-        - Ideas:
-            - Aliens vs Humans?
-            - Alien Federation with Humans vs Annunaki? => Solar Federation vs Annunaki Empire
 - Hedron vs Hedron
     - FIX BUGS BEFORE CONTINUING
     - Move
@@ -55,6 +48,8 @@
 - Board Integration: 100 Hedrons vs 100 Hedrons
     - Simulation needs to be the same as if a player does it
         - Speed up version of a player game
+    - Camera
+        - Make it like Sims and XCOM
     - Board Grid Tests
         - Space Size:
             - Default 10x10
@@ -70,6 +65,18 @@
             - Normal: 200x200 tiles
             - Large: 220×220 tiles
             - Giant: 240×240 tiles
+- AI Integration
+    - Work with mu-prism with OpenAI
+    - Create Tensorflow Models
+        - Finish Tensorflow class first
+    - Integrate over network
+    - Upload Hedron to MuSystem
+        - Play Hedron
+        - Discord for Prisms in Prime Hedron
+        - Message individual Prisms
+        - See feed of Prisms thoughts
+            - Like social media posts, you can like or dislike that behavior
+        - Create database for Prism Data
 - Bases
     - Outpost
     - Colony
