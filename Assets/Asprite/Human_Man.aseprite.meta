@@ -126,8 +126,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 76
+      x: 28
+      y: 4
       width: 15
       height: 28
     spriteID: ed81f63e0b01c2c4fabf111028ada274
@@ -138,7 +138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
+    uvTransform: {x: 28, y: 4}
   - name: Human_Man_Frame_1
     originalName: 
     pivot: {x: 0.5, y: -0.071428575}
@@ -167,7 +167,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 28
-      y: 4
+      y: 40
       width: 15
       height: 28
     spriteID: 8a5a9f38cc99a1b44b7725914de218d9
@@ -178,7 +178,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 4}
+    uvTransform: {x: 28, y: 40}
   - name: Human_Man_Frame_3
     originalName: 
     pivot: {x: 0.4666667, y: -0.035714287}
@@ -187,7 +187,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 28
-      y: 40
+      y: 76
       width: 15
       height: 28
     spriteID: 951885706d61af2439c1d659703ef4e6
@@ -198,7 +198,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 40}
+    uvTransform: {x: 28, y: 76}
   - name: Human_Man_Frame_4
     originalName: 
     pivot: {x: 0.5, y: -0.071428575}
@@ -226,8 +226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 28
-      y: 76
+      x: 51
+      y: 4
       width: 15
       height: 28
     spriteID: c27304106b0737544add0046b9c6762f
@@ -238,7 +238,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 76}
+    uvTransform: {x: 51, y: 4}
   - name: Human_Man_Frame_6
     originalName: 
     pivot: {x: 0.53846157, y: -0.037037037}
@@ -246,7 +246,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
+      x: 74
       y: 4
       width: 13
       height: 27
@@ -258,7 +258,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 4}
+    uvTransform: {x: 74, y: 4}
   - name: Human_Man_Frame_7
     originalName: 
     pivot: {x: 0.54545456, y: -0.035714287}
@@ -266,7 +266,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 72
+      x: 95
       y: 39
       width: 11
       height: 28
@@ -278,7 +278,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 39}
+    uvTransform: {x: 95, y: 39}
   - name: Human_Man_Frame_8
     originalName: 
     pivot: {x: 0.53846157, y: -0.037037037}
@@ -286,7 +286,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
+      x: 74
       y: 39
       width: 13
       height: 27
@@ -298,7 +298,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 39}
+    uvTransform: {x: 74, y: 39}
   - name: Human_Man_Frame_9
     originalName: 
     pivot: {x: 0.4615385, y: -0.037037037}
@@ -306,7 +306,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
+      x: 74
       y: 74
       width: 13
       height: 27
@@ -318,7 +318,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 74}
+    uvTransform: {x: 74, y: 74}
   - name: Human_Man_Frame_10
     originalName: 
     pivot: {x: 0.45454547, y: -0.035714287}
@@ -326,7 +326,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 72
+      x: 95
       y: 75
       width: 11
       height: 28
@@ -338,7 +338,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 75}
+    uvTransform: {x: 95, y: 75}
   - name: Human_Man_Frame_11
     originalName: 
     pivot: {x: 0.4615385, y: -0.037037037}
@@ -346,7 +346,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 72
+      x: 95
       y: 4
       width: 13
       height: 27
@@ -358,7 +358,67 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 4}
+    uvTransform: {x: 95, y: 4}
+  - name: Human_Man_Frame_12
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 40
+      width: 15
+      height: 28
+    spriteID: e912d3087b0577e4fbe422633bb37d89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 40}
+  - name: Human_Man_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 16
+      height: 28
+    spriteID: b88d82666200e604fa08d161641e3b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Human_Man_Frame_14
+    originalName: 
+    pivot: {x: 0.53333336, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 76
+      width: 15
+      height: 28
+    spriteID: 9dcb068d92def134398426a285c493c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 76}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -464,6 +524,30 @@ ScriptedImporter:
         width: 13
         height: 27
       spriteId: c045ca3d9a23ea441b2812cb025e5cf1
+    - name: Human_Man_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 1
+        width: 15
+        height: 28
+      spriteId: e912d3087b0577e4fbe422633bb37d89
+    - name: Human_Man_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 2
+        width: 16
+        height: 28
+      spriteId: b88d82666200e604fa08d161641e3b42
+    - name: Human_Man_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 1
+        width: 15
+        height: 28
+      spriteId: 9dcb068d92def134398426a285c493c0
     linkedCells: []
     parentIndex: -1
   platformSettings: []

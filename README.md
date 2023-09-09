@@ -2,14 +2,18 @@
 
 ## Target Platforms
 - Web => MuSystem
-- iOS => iPad initally
 - PC/macos => local build
-- Total: WebGL, iOS, Macos, Windows, and Linux
+- Total: WebGL, Macos, and Windows
 
 ## Art References
 - https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fmuz5w4ol34e91.gif%3Fformat%3Dpng8%26s%3Dde66879400cdaf72a9af8309ba3849ce359ccd72
 - https://2.bp.blogspot.com/-8-sbv4Zarwo/Vup7KQjQBuI/AAAAAAAADGI/GHRaw5q22D8JLIfeNQI9gQoMk4y5i6PYw/s1600/107-02.jpg
 - https://i.pinimg.com/1200x/88/14/25/8814256d2a3e46c30dac00d317e80871.jpg
+
+## Mini-Education
+- 8way: 
+    - https://www.youtube.com/watch?v=aios4kDJZsc
+    - https://www.youtube.com/watch?v=ty-RxDy9_SQ 
 
 ## In Progress
 - Get combat done for 2 single prisms
