@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1696edb50dfede8489dbe11f267f282b
+guid: 67d9aea2edfa84f05a3b4f128843895b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Prism_Male_Frame_0
+  - name: Test_Alien_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 14
       height: 30
-    spriteID: 6232e7f9562041c47b1382c4c83bec6f
+    spriteID: 931b0862192cc468d8ab60abcf3e4b50
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,7 +139,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Prism_Male_Frame_1
+  - name: Test_Alien_Frame_1
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 42
       width: 14
       height: 30
-    spriteID: e7b6d8b515e33bc4d87dfc0c60e08ace
+    spriteID: 6543c160c02e04e15b4238446d7d20ca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,7 +159,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 42}
-  - name: Prism_Male_Frame_2
+  - name: Test_Alien_Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 80
       width: 14
       height: 30
-    spriteID: 2bcc266623e850f41aa1ab637b6501a2
+    spriteID: 1926e43f105fa478b9f8fdf2541c7268
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 80}
-  - name: Prism_Male_Frame_3
+  - name: Test_Alien_Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 118
       width: 14
       height: 30
-    spriteID: 6ba5e75ea2cf24d72b43235dc584ec4a
+    spriteID: 285631339e4344505b4aa7b1f84c982c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,7 +199,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 118}
-  - name: Prism_Male_Frame_4
+  - name: Test_Alien_Frame_4
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 156
       width: 14
       height: 30
-    spriteID: e8f43ab761ca14fef8fa104291598f67
+    spriteID: 598cc76ac4ec54a0f83ee6882afa067a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,7 +219,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 156}
-  - name: Prism_Male_Frame_5
+  - name: Test_Alien_Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 194
       width: 14
       height: 30
-    spriteID: 14f051dba68ab44b3bad6e34feccd24f
+    spriteID: 17d32a08784704172b97bec9de98a244
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,7 +239,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 194}
-  - name: Prism_Male_Frame_6
+  - name: Test_Alien_Frame_6
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 156
       width: 10
       height: 29
-    spriteID: 81f27a6ef5d9e4f78a4744a8c2aa2fa8
+    spriteID: ae52e23021f3c4b33b85b80e4dcc668e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -259,7 +259,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 156}
-  - name: Prism_Male_Frame_7
+  - name: Test_Alien_Frame_7
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 152
       width: 8
       height: 30
-    spriteID: 74a6a8d989faa4caeafb7399a729c3d8
+    spriteID: 4b7a05362187845f482d183e66ea6f8b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -279,7 +279,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 152}
-  - name: Prism_Male_Frame_8
+  - name: Test_Alien_Frame_8
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 193
       width: 10
       height: 29
-    spriteID: fbf6f235cc5404c2fb9ceabd2e49ac18
+    spriteID: 89004ee4756c4472fba0dcc211152e01
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -299,7 +299,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 193}
-  - name: Prism_Male_Frame_9
+  - name: Test_Alien_Frame_9
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 4
       width: 10
       height: 29
-    spriteID: e822d4af8bb5545c88a92e539cb8056b
+    spriteID: 5f16bb5325e1e447db68c5ba100aa2c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -319,7 +319,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 4}
-  - name: Prism_Male_Frame_10
+  - name: Test_Alien_Frame_10
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 190
       width: 8
       height: 30
-    spriteID: 7de05bdcbf82a424497fada7191290fa
+    spriteID: 460e5f7ea42cb4a4fbacb9f430c3fede
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -339,7 +339,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 190}
-  - name: Prism_Male_Frame_11
+  - name: Test_Alien_Frame_11
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 41
       width: 10
       height: 29
-    spriteID: f6fe6e6c74a24408690d38802968b58c
+    spriteID: 351889067b02647ddad5e3ea9bc9dcae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -359,7 +359,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 41}
-  - name: Prism_Male_Frame_12
+  - name: Test_Alien_Frame_12
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 78
       width: 10
       height: 29
-    spriteID: d7ad6936d45164d4bb87e17a48b6afba
+    spriteID: f2d034740055f4604b2bcc267b4ee239
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -379,7 +379,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 78}
-  - name: Prism_Male_Frame_13
+  - name: Test_Alien_Frame_13
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 4
       width: 10
       height: 30
-    spriteID: 82a7c6cecb3e14b13bd0a1f0b3ce521b
+    spriteID: e47b98db7981640d49fe5fd78f57a47a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -399,7 +399,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 4}
-  - name: Prism_Male_Frame_14
+  - name: Test_Alien_Frame_14
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 115
       width: 10
       height: 29
-    spriteID: d2a8be2d4f9514f6f8bef849ed133911
+    spriteID: 075ea9bd69d074317bf850e82ad0a048
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -419,7 +419,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 115}
-  - name: Prism_Male_Frame_15
+  - name: Test_Alien_Frame_15
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 152
       width: 10
       height: 29
-    spriteID: 90e1f60a175cb42daa80a3b8bcd287fb
+    spriteID: 7be06100dc9f445d5bc7171b8c1f5a03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -439,7 +439,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 152}
-  - name: Prism_Male_Frame_16
+  - name: Test_Alien_Frame_16
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 42
       width: 10
       height: 30
-    spriteID: 5f660e27988504987bebe7da26cb6012
+    spriteID: 4cc6406d640984435ad34f1e329c822f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -459,7 +459,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 42}
-  - name: Prism_Male_Frame_17
+  - name: Test_Alien_Frame_17
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -470,7 +470,7 @@ ScriptedImporter:
       y: 189
       width: 10
       height: 29
-    spriteID: 34f9642cb01fd4ab6892440d0a0330f6
+    spriteID: ff005bc076e494457abf569823b59f21
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -479,7 +479,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 44, y: 189}
-  - name: Prism_Male_Frame_18
+  - name: Test_Alien_Frame_18
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -490,7 +490,7 @@ ScriptedImporter:
       y: 4
       width: 10
       height: 29
-    spriteID: 1bf671fe5f64f4500996b5fb75a90deb
+    spriteID: 98134bf2f09ed4348ad90c8ad0661f8d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -499,7 +499,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 4}
-  - name: Prism_Male_Frame_19
+  - name: Test_Alien_Frame_19
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -510,7 +510,7 @@ ScriptedImporter:
       y: 80
       width: 10
       height: 30
-    spriteID: 2ce3982f9305a4b4b92556815e54eb97
+    spriteID: cbc073a42251b49ee894583a0ca7e964
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -519,7 +519,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 80}
-  - name: Prism_Male_Frame_20
+  - name: Test_Alien_Frame_20
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -530,7 +530,7 @@ ScriptedImporter:
       y: 41
       width: 10
       height: 29
-    spriteID: d17438208effa4d82ad4fd1528e073a5
+    spriteID: 3d776b2193ff3413995f0202069a0f1c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -539,7 +539,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 41}
-  - name: Prism_Male_Frame_21
+  - name: Test_Alien_Frame_21
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -550,7 +550,7 @@ ScriptedImporter:
       y: 78
       width: 10
       height: 29
-    spriteID: c0bf6c166c9284a90bfbebd099406837
+    spriteID: 96cde56def217426a9535c1300aa7390
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -559,7 +559,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 78}
-  - name: Prism_Male_Frame_22
+  - name: Test_Alien_Frame_22
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -570,7 +570,7 @@ ScriptedImporter:
       y: 118
       width: 10
       height: 30
-    spriteID: e2c26d177fe7d49f58eba54073afb039
+    spriteID: 069d21d122d29449e8bc936e56a3008c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -579,7 +579,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 26, y: 118}
-  - name: Prism_Male_Frame_23
+  - name: Test_Alien_Frame_23
     originalName: 
     pivot: {x: 0.5, y: -0.03448276}
     alignment: 9
@@ -590,7 +590,7 @@ ScriptedImporter:
       y: 115
       width: 10
       height: 29
-    spriteID: 88e36d3b496694727baaf4bb891394ab
+    spriteID: 307d971ce07a5465bbb5156013d9299e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -602,204 +602,204 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 677497839
-    name: Prism_Male
+    guid: -1490769226
+    name: Test_Alien
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Prism_Male_Frame_0
+    - name: Test_Alien_Frame_0
       frameIndex: 0
       cellRect:
         x: 1
         y: 0
         width: 14
         height: 30
-      spriteId: 6232e7f9562041c47b1382c4c83bec6f
-    - name: Prism_Male_Frame_1
+      spriteId: 931b0862192cc468d8ab60abcf3e4b50
+    - name: Test_Alien_Frame_1
       frameIndex: 1
       cellRect:
         x: 1
         y: 1
         width: 14
         height: 30
-      spriteId: e7b6d8b515e33bc4d87dfc0c60e08ace
-    - name: Prism_Male_Frame_2
+      spriteId: 6543c160c02e04e15b4238446d7d20ca
+    - name: Test_Alien_Frame_2
       frameIndex: 2
       cellRect:
         x: 1
         y: 0
         width: 14
         height: 30
-      spriteId: 2bcc266623e850f41aa1ab637b6501a2
-    - name: Prism_Male_Frame_3
+      spriteId: 1926e43f105fa478b9f8fdf2541c7268
+    - name: Test_Alien_Frame_3
       frameIndex: 3
       cellRect:
         x: 1
         y: 0
         width: 14
         height: 30
-      spriteId: 6ba5e75ea2cf24d72b43235dc584ec4a
-    - name: Prism_Male_Frame_4
+      spriteId: 285631339e4344505b4aa7b1f84c982c
+    - name: Test_Alien_Frame_4
       frameIndex: 4
       cellRect:
         x: 1
         y: 1
         width: 14
         height: 30
-      spriteId: e8f43ab761ca14fef8fa104291598f67
-    - name: Prism_Male_Frame_5
+      spriteId: 598cc76ac4ec54a0f83ee6882afa067a
+    - name: Test_Alien_Frame_5
       frameIndex: 5
       cellRect:
         x: 1
         y: 0
         width: 14
         height: 30
-      spriteId: 14f051dba68ab44b3bad6e34feccd24f
-    - name: Prism_Male_Frame_6
+      spriteId: 17d32a08784704172b97bec9de98a244
+    - name: Test_Alien_Frame_6
       frameIndex: 6
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: 81f27a6ef5d9e4f78a4744a8c2aa2fa8
-    - name: Prism_Male_Frame_7
+      spriteId: ae52e23021f3c4b33b85b80e4dcc668e
+    - name: Test_Alien_Frame_7
       frameIndex: 7
       cellRect:
         x: 4
         y: 1
         width: 8
         height: 30
-      spriteId: 74a6a8d989faa4caeafb7399a729c3d8
-    - name: Prism_Male_Frame_8
+      spriteId: 4b7a05362187845f482d183e66ea6f8b
+    - name: Test_Alien_Frame_8
       frameIndex: 8
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: fbf6f235cc5404c2fb9ceabd2e49ac18
-    - name: Prism_Male_Frame_9
+      spriteId: 89004ee4756c4472fba0dcc211152e01
+    - name: Test_Alien_Frame_9
       frameIndex: 9
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: e822d4af8bb5545c88a92e539cb8056b
-    - name: Prism_Male_Frame_10
+      spriteId: 5f16bb5325e1e447db68c5ba100aa2c0
+    - name: Test_Alien_Frame_10
       frameIndex: 10
       cellRect:
         x: 4
         y: 1
         width: 8
         height: 30
-      spriteId: 7de05bdcbf82a424497fada7191290fa
-    - name: Prism_Male_Frame_11
+      spriteId: 460e5f7ea42cb4a4fbacb9f430c3fede
+    - name: Test_Alien_Frame_11
       frameIndex: 11
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: f6fe6e6c74a24408690d38802968b58c
-    - name: Prism_Male_Frame_12
+      spriteId: 351889067b02647ddad5e3ea9bc9dcae
+    - name: Test_Alien_Frame_12
       frameIndex: 12
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: d7ad6936d45164d4bb87e17a48b6afba
-    - name: Prism_Male_Frame_13
+      spriteId: f2d034740055f4604b2bcc267b4ee239
+    - name: Test_Alien_Frame_13
       frameIndex: 13
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 30
-      spriteId: 82a7c6cecb3e14b13bd0a1f0b3ce521b
-    - name: Prism_Male_Frame_14
+      spriteId: e47b98db7981640d49fe5fd78f57a47a
+    - name: Test_Alien_Frame_14
       frameIndex: 14
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: d2a8be2d4f9514f6f8bef849ed133911
-    - name: Prism_Male_Frame_15
+      spriteId: 075ea9bd69d074317bf850e82ad0a048
+    - name: Test_Alien_Frame_15
       frameIndex: 15
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: 90e1f60a175cb42daa80a3b8bcd287fb
-    - name: Prism_Male_Frame_16
+      spriteId: 7be06100dc9f445d5bc7171b8c1f5a03
+    - name: Test_Alien_Frame_16
       frameIndex: 16
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 30
-      spriteId: 5f660e27988504987bebe7da26cb6012
-    - name: Prism_Male_Frame_17
+      spriteId: 4cc6406d640984435ad34f1e329c822f
+    - name: Test_Alien_Frame_17
       frameIndex: 17
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: 34f9642cb01fd4ab6892440d0a0330f6
-    - name: Prism_Male_Frame_18
+      spriteId: ff005bc076e494457abf569823b59f21
+    - name: Test_Alien_Frame_18
       frameIndex: 18
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: 1bf671fe5f64f4500996b5fb75a90deb
-    - name: Prism_Male_Frame_19
+      spriteId: 98134bf2f09ed4348ad90c8ad0661f8d
+    - name: Test_Alien_Frame_19
       frameIndex: 19
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 30
-      spriteId: 2ce3982f9305a4b4b92556815e54eb97
-    - name: Prism_Male_Frame_20
+      spriteId: cbc073a42251b49ee894583a0ca7e964
+    - name: Test_Alien_Frame_20
       frameIndex: 20
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: d17438208effa4d82ad4fd1528e073a5
-    - name: Prism_Male_Frame_21
+      spriteId: 3d776b2193ff3413995f0202069a0f1c
+    - name: Test_Alien_Frame_21
       frameIndex: 21
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: c0bf6c166c9284a90bfbebd099406837
-    - name: Prism_Male_Frame_22
+      spriteId: 96cde56def217426a9535c1300aa7390
+    - name: Test_Alien_Frame_22
       frameIndex: 22
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 30
-      spriteId: e2c26d177fe7d49f58eba54073afb039
-    - name: Prism_Male_Frame_23
+      spriteId: 069d21d122d29449e8bc936e56a3008c
+    - name: Test_Alien_Frame_23
       frameIndex: 23
       cellRect:
         x: 3
         y: 1
         width: 10
         height: 29
-      spriteId: 88e36d3b496694727baaf4bb891394ab
+      spriteId: 307d971ce07a5465bbb5156013d9299e
     linkedCells: []
     parentIndex: -1
   platformSettings: []

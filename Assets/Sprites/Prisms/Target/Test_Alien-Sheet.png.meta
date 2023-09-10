@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 118046c1305644942a56b631c92dd35a
+guid: 945a0d3b5bfa24458b9eda050baba834
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Human_Man-Sheet_0
+      name: Test_Alien-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 716d03bedad9e4e289ce958956fef7bd
-      internalID: 2002649019
+      spriteID: 47dc3e653d0f44b2ebb0f1f19be2eb2c
+      internalID: 1270653768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_1
+      name: Test_Alien-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf5209327a794cf0bb025df66140e5a
-      internalID: -1525926325
+      spriteID: f24f3e2c975d84a8f84c972d00893163
+      internalID: -235084999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_2
+      name: Test_Alien-Sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed5cb378cd576489fb39ed8d2f31f6aa
-      internalID: -1611784709
+      spriteID: c25d0b18b04e24291b30bc6d21b2b6b1
+      internalID: -552252512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_3
+      name: Test_Alien-Sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eed1f2e1db4f7435fb018d353991ff70
-      internalID: 28568515
+      spriteID: 99ff66ee0ee984c61b018de5791eef86
+      internalID: -1276736377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_4
+      name: Test_Alien-Sheet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baa16755ae907467fa7f820c12daf2ec
-      internalID: -1583567241
+      spriteID: a36a2794a0fd14525bfe70ccad4e88b9
+      internalID: -1646078957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_5
+      name: Test_Alien-Sheet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d468370209acf4e1d9077aca938fabbb
-      internalID: 2053748321
+      spriteID: f2d6f4a04e24348558fd2107a4cba2fa
+      internalID: 2006379404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_6
+      name: Test_Alien-Sheet_6
       rect:
         serializedVersion: 2
         x: 96
@@ -289,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85d68fae58f5b477bb9b4d4e7e46c0d5
-      internalID: 260119965
+      spriteID: c2d283d6cc6a1445988a905481cdf64a
+      internalID: -12979715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_7
+      name: Test_Alien-Sheet_7
       rect:
         serializedVersion: 2
         x: 112
@@ -310,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c05fccf6a9cba4bbbb2d869cb67196db
-      internalID: 1766688410
+      spriteID: 6277b7c14f1af4449a8906fcfbd641fb
+      internalID: 1885516928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_8
+      name: Test_Alien-Sheet_8
       rect:
         serializedVersion: 2
         x: 128
@@ -331,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02aec7ec50c3b435c923f139ea27c2da
-      internalID: -706141321
+      spriteID: de2c9d4237088447b952ac95b1fcb726
+      internalID: 609023886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_9
+      name: Test_Alien-Sheet_9
       rect:
         serializedVersion: 2
         x: 144
@@ -352,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d740979a1bfa444cebc5be86b928fb01
-      internalID: 1394483941
+      spriteID: 9ffd28581189448ef800a96f9ce3be72
+      internalID: 141465958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_10
+      name: Test_Alien-Sheet_10
       rect:
         serializedVersion: 2
         x: 160
@@ -373,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37c06f85f38445f3aada761cbcbd0de
-      internalID: -1281453454
+      spriteID: 2017f3326e0014588bc4ae212b182883
+      internalID: 2099328086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Human_Man-Sheet_11
+      name: Test_Alien-Sheet_11
       rect:
         serializedVersion: 2
         x: 176
@@ -394,8 +394,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79251c2296ee64460af74b19d930acf6
-      internalID: -514441937
+      spriteID: 59ccada6aa94345d78278b7ce8030639
+      internalID: -1037506666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a3261f6ab0542d9ae04877b9acef00
+      internalID: 2040370280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf094ec830c64421ca6829ba7bd4215b
+      internalID: 904400340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c98549051fac4c7e80961ff97a9f3d6
+      internalID: 1985746209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550f3687323ca4fddaf6435e5eb0536c
+      internalID: -1935931938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d554a44a51d46f3aafcb1385706692
+      internalID: 1740103005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b66ac9bf00a41c384b0ee183a8baf6
+      internalID: -2065785961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17786115900454bc2a86d2240f75bcb0
+      internalID: 1249471678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25202512fd5b42338fc268dea1a1aa1
+      internalID: -1574984484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a408875ea5c4458860af1dc898cf95
+      internalID: -425171626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987d809f485d8474cbad28306f92fd32
+      internalID: -1783266437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d95ec710d3048b9a35cd0c133702de
+      internalID: 1439299882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test_Alien-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c9eef413b3b4cbf943b3f1089ff6ad
+      internalID: 2119281996
       vertices: []
       indices: 
       edges: []
@@ -411,18 +663,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Human_Man-Sheet_0: 2002649019
-      Human_Man-Sheet_1: -1525926325
-      Human_Man-Sheet_10: -1281453454
-      Human_Man-Sheet_11: -514441937
-      Human_Man-Sheet_2: -1611784709
-      Human_Man-Sheet_3: 28568515
-      Human_Man-Sheet_4: -1583567241
-      Human_Man-Sheet_5: 2053748321
-      Human_Man-Sheet_6: 260119965
-      Human_Man-Sheet_7: 1766688410
-      Human_Man-Sheet_8: -706141321
-      Human_Man-Sheet_9: 1394483941
+      Test_Alien-Sheet_0: 1270653768
+      Test_Alien-Sheet_1: -235084999
+      Test_Alien-Sheet_10: 2099328086
+      Test_Alien-Sheet_11: -1037506666
+      Test_Alien-Sheet_12: 2040370280
+      Test_Alien-Sheet_13: 904400340
+      Test_Alien-Sheet_14: 1985746209
+      Test_Alien-Sheet_15: -1935931938
+      Test_Alien-Sheet_16: 1740103005
+      Test_Alien-Sheet_17: -2065785961
+      Test_Alien-Sheet_18: 1249471678
+      Test_Alien-Sheet_19: -1574984484
+      Test_Alien-Sheet_2: -552252512
+      Test_Alien-Sheet_20: -425171626
+      Test_Alien-Sheet_21: -1783266437
+      Test_Alien-Sheet_22: 1439299882
+      Test_Alien-Sheet_23: 2119281996
+      Test_Alien-Sheet_3: -1276736377
+      Test_Alien-Sheet_4: -1646078957
+      Test_Alien-Sheet_5: 2006379404
+      Test_Alien-Sheet_6: -12979715
+      Test_Alien-Sheet_7: 1885516928
+      Test_Alien-Sheet_8: 609023886
+      Test_Alien-Sheet_9: 141465958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
