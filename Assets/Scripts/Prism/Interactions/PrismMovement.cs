@@ -11,8 +11,8 @@ public class PrismMovement : MonoBehaviour
     private Vector2 targetPosition;
     private bool isMoving = false;
 
-    public Rigidbody2D rigidBody;
-    public Animator animator;
+    private Rigidbody2D rigidBody;
+    private Animator animator;
 
     public void Start()
     {

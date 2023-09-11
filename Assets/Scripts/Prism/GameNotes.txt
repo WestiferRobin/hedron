@@ -53,7 +53,7 @@ Combat Rank:
 9. Major
 10. Arch
 
-Guardian Sub Rank:
+Guardian Sub Rank: => THIS IS GONNA NEEDS SOME WORK
 1. Apprentice
 2. Journeyman
 3. Adept

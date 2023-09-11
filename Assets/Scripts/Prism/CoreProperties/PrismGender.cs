@@ -1,7 +1,4 @@
-﻿using System;
-
-
-public enum PrismGender
+﻿public enum PrismGender
 {
     Unknown = 0,
     Male = 1,

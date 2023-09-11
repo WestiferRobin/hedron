@@ -11,17 +11,18 @@ public enum BodyPart
 
 public class PrismBody
 {
-
+    private readonly PrismRace prismRace;
     public Dictionary<BodyPart, int> BodyParts { get; internal set; }
 
-    public PrismBody()
+    public PrismBody(PrismRace race)
     {
-        this.BodyParts = PrismBodyFactory.GeneratePrismBody();
+        this.prismRace = race;
+        this.BodyParts = PrismBodyFactory.GeneratePrismBody(race);
     }
 
     public bool IsDamaged()
     {
-        var defaultParts = PrismBodyFactory.GeneratePrismBody();
+        var defaultParts = PrismBodyFactory.GeneratePrismBody(this.prismRace);
         var defaultHealthScore = PrismScoreHelper.CalculateHealthScore(defaultParts);
         var ourHealthScore = PrismScoreHelper.CalculateHealthScore(this.BodyParts);
         if (defaultHealthScore <= 0)
@@ -46,6 +47,6 @@ public class PrismBody
 
     public void Rest()
     {
-        this.BodyParts = PrismBodyFactory.GeneratePrismBody();
+        this.BodyParts = PrismBodyFactory.GeneratePrismBody(prismRace);
     }
 }

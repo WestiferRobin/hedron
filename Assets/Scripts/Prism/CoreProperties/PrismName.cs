@@ -4,22 +4,21 @@ using UnityEngine.Analytics;
 public class PrismName
 {
     public string FirstName { get; set; }
-    public string lastName { get; set; }
+    public string LastName { get; set; }
 
     public readonly string FullName;
     public PrismName(string firstName, string lastName)
     {
         this.FirstName = firstName;
-        this.lastName = lastName;
-        this.FullName = $"{this.FirstName} {this.lastName}";
+        this.LastName = lastName;
+        this.FullName = $"{this.FirstName} {this.LastName}";
     }
 
-    public PrismName(PrismGender gender, string firstName = null, string lastName = null)
+    public PrismName(PrismGender gender, PrismRace race)
     {
-        firstName ??= PrismNameFactory.RandomFirstName(gender);
-        lastName ??= PrismNameFactory.RandomLastName();
-        this.FirstName = firstName;
-        this.lastName = lastName;
+        this.FirstName = NameFactory.RandomFirstName(gender, race);
+        this.LastName = NameFactory.RandomLastName(race);
+        this.FullName = $"{this.FirstName} {this.LastName}";
     }
 
     public override string ToString() {
