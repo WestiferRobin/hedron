@@ -31,16 +31,7 @@ Battle Class:
 
 Items:
 - Packs
-    - Med
-    - Repair
-    - Stim
-        - For temp raise for stat
 - Grenades
-    - Smoke
-    - Fire
-    - Shock
-    - Frag
-    - Poisin
 
 Weapons:
 - Pistols

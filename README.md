@@ -10,6 +10,8 @@
 - https://2.bp.blogspot.com/-8-sbv4Zarwo/Vup7KQjQBuI/AAAAAAAADGI/GHRaw5q22D8JLIfeNQI9gQoMk4y5i6PYw/s1600/107-02.jpg
 - https://i.pinimg.com/1200x/88/14/25/8814256d2a3e46c30dac00d317e80871.jpg
 
+## Tutorials
+- PixelLab Series: https://www.youtube.com/playlist?list=PLqxDfnv9FagPWIQo4Jia8SX5CkFX9iuZ2
 
 ## In Progress
 - Get combat done for 2 single prisms
