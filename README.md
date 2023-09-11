@@ -14,7 +14,12 @@
 - PixelLab Series: https://www.youtube.com/playlist?list=PLqxDfnv9FagPWIQo4Jia8SX5CkFX9iuZ2
 
 ## In Progress
-- Get combat done for 2 single prisms
+- Bugs:
+    - Movement
+        - Tile selection needs to be polished
+            - Player is moving off the tilemap
+            - Player and Tile need better collision
+- Combat for 2 single Hedrons
     - Ally vs Enemy
             - Ally can be computer or player
             - Enemy can be player
@@ -37,13 +42,9 @@
         - Need GameNotes.txt implemented with some assets
             - Include Animations for shooting guns
             - Animations for using Items
-    - Movement
-        - Tile selection needs to be polished
-            - Player is moving off the tilemap
-            - Player and Tile need better collision
 
 ## TODOs
-- Get socalize done for 2 prisms
+- Socialize for 2 Hedrons
     - Add Social Hub for UI Text Hub
     - Able to Socalize to enemies, accuantices, and best friends
     - Also include a love system for Breeding
@@ -55,6 +56,7 @@
 - Board Integration: 100 Hedrons vs 100 Hedrons
     - POLISHING!
         - Update and fix any assets missing including sound
+            - Look at PixelLabs
         - Update gamelogic and major refactoring as needed
     - Simulation needs to be the same as if a player does it
         - Speed up version of a player game
@@ -75,7 +77,7 @@
             - Normal: 200x200 tiles
             - Large: 220×220 tiles
             - Giant: 240×240 tiles
-- AI Integration
+- AI Integration: Alpha Testing
     - Upload Hedron to MuSystem
         - Play Hedron
         - Discord for Prisms in Prime Hedron
@@ -110,13 +112,15 @@
         - Remake the solar system
         - Apply Bases and Vehicles
             - Work and make Fortress per Society
+            - Create Society Guardian Order
+            - Create Society Arch Government
         - Work on Age of Empires and Red Alert mechanics
         - Test 100 v 100 Hedrons
     - Galaxy
         - 3x3x3 Galaxies
             - watch simulation
             - play game
-
-
-
+- Judgement Day: Beta Testing
+    - Polish and Test for private Beta
+    - Decide to keep as personal or sell it
 

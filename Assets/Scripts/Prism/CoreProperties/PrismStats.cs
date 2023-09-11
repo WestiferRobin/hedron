@@ -1,6 +1,9 @@
-﻿public class PrismStats
+﻿using System;
+
+public class PrismStats
 {
     /*
+    RANGE IS 1-10
     Strength: Melee Damage
     Dexterity: Shooting Damage
     Constitution: Health capacity
@@ -19,6 +22,10 @@
 
     public PrismStats(CombatClass combatClass)
     {
+        if (combatClass == CombatClass.Unknown)
+        {
+            throw new ArgumentException("Not a valid Combat Class to create PrismStats");
+        }
         // TODO: Create factory for combatClass
     }
 }

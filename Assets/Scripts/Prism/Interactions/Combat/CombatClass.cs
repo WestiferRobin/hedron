@@ -7,5 +7,5 @@
     Ranger = 2,
     Officer = 3,
     Commando = 4,
-    Disciple = 5
+    Guardian = 5
 }

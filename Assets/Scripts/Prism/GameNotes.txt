@@ -1,25 +1,32 @@
 ﻿
 Hedron vs Hedron: (Final test is 100 v 100 Hedrons)
-- Each player has a hedron
-    - A hedron has 5 prisms
+- Types of matches (Ally vs Enemy)
+    - User vs User
+    - User vs Computer
+    - Computer vs Computer
+- Hedron
+    - A group the player controls 5 by default
+    - range of a hedron should be 1-9 prisms
+        - 1 for last man standing
+        - 9 for max cap to add to hedron squad
+- Prism
+    - Has Stats for Combat
+    - Has a Weapon by CombatClass
+    - Has Armor by CombatClass
+        - Protects Prisms Body
+        - If killed then gone forever
+    - Kill count increases CombatRank
+    - Has 2 Item slots and based on CombatClass
+- Ally vs Enemy
+    - Players: Enemy and Ally
+    - Player takes turn moving a Prism
     - Each Prism has a turn
         - 2 Action Points
             - 1 Cost
                 - Move, Reload, Item
             - 2 Cost
-                - Shooting
-- Each player has a turn for each Prism in a Hedron
-
-Prism:
-    - Level: 1-10
-    - Body: 10
-        - Head 3
-        - Torso 3
-        - Legs 2
-        - Arms 2
-    - Armor: 5 
-    - Movement: 5
-    - Range: 5
+                - Fire, Overwatch, Hunker
+    - First one who kills opponets Hedron wins
 
 Battle Class:
 1. Soldier: Rifle/Pistol Expert
@@ -27,11 +34,22 @@ Battle Class:
 3. Ranger: Melee/Movement Expert
 4. Officer: Sniper/Stealth Expert
 5. Commando: Heavy/Explosives Expert
-6. Disciple: Magix(Destruction/Conjuration) Expert
+6. Guardian: Magix(Destruction/Conjuration) Expert
 
 Items:
 - Packs
+    - MedPack
+    - RepairPack
+    - StimPack
+        - Damage
+        - Shield
+        - Movement
 - Grenades
+    - Frag
+    - Smoke
+    - Poisin
+    - Shock
+    - Flame
 
 Weapons:
 - Pistols
@@ -53,7 +71,9 @@ Combat Rank:
 9. Major
 10. Arch
 
-Guardian Sub Rank: => THIS IS GONNA NEEDS SOME WORK
+------------------------------------------------------------
+
+Guardian Sub Rank: => THIS IS FOR THE ORDER
 1. Apprentice
 2. Journeyman
 3. Adept
