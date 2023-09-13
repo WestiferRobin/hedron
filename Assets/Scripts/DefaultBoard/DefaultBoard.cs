@@ -1,9 +1,8 @@
-using Assets.Scripts.DefaultBoard;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefaultBoard : MonoBehaviour, IBoard
+public class DefaultBoard : MonoBehaviour
 {
     public GameObject tile;
     public int width = 10;
