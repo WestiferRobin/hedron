@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3nbhtcjyi6db"]
-
-[ext_resource type="Script" path="res://TileBoard.cs" id="1_he63h"]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_he63h")
