@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 8862699369290350295, guid: 37301929e166942ebbc9d391c2fa419c, type: 3}
       propertyPath: tilemap
       value: 
-      objectReference: {fileID: 903237985}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -490,7 +490,7 @@ PrefabInstance:
     - target: {fileID: 638404305474891337, guid: 1143a4f235a644491b241384b5d71c00, type: 3}
       propertyPath: tilemap
       value: 
-      objectReference: {fileID: 903237985}
+      objectReference: {fileID: 0}
     - target: {fileID: 3869815069373500036, guid: 1143a4f235a644491b241384b5d71c00, type: 3}
       propertyPath: m_Name
       value: Zeta-Male-Prism
