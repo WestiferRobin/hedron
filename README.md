@@ -44,6 +44,8 @@
             - Animations for using Items
 
 ## TODOs
+
+### Classic Game
 - Socialize for 2 Hedrons
     - Add Social Hub for UI Text Hub
     - Able to Socalize to enemies, accuantices, and best friends
@@ -53,11 +55,11 @@
     - Assets
         - Create Males and Females
         - Create Children
+- AI Integration: Alpha Testing
+    - Work with mu-prism with OpenAI
+    - Create Tensorflow Models
+        - Finish Tensorflow class first
 - Board Integration: 100 Hedrons vs 100 Hedrons
-    - POLISHING!
-        - Update and fix any assets missing including sound
-            - Look at PixelLabs
-        - Update gamelogic and major refactoring as needed
     - Simulation needs to be the same as if a player does it
         - Speed up version of a player game
     - Camera
@@ -77,17 +79,23 @@
             - Normal: 200x200 tiles
             - Large: 220×220 tiles
             - Giant: 240×240 tiles
-- AI Integration: Alpha Testing
-    - Upload Hedron to MuSystem
-        - Play Hedron
-        - Discord for Prisms in Prime Hedron
-        - Message individual Prisms
-        - See feed of Prisms thoughts
-            - Like social media posts, you can like or dislike that behavior
-        - Create database for Prism Data
-    - Work with mu-prism with OpenAI
-    - Create Tensorflow Models
-        - Finish Tensorflow class first
+
+### Travel Game
+- Board Integration: 100 Hedrons vs 100 Hedrons
+    - POLISHING!
+        - Update and fix any assets missing including sound
+            - Look at PixelLabs
+        - Update gamelogic and major refactoring as needed
+    - Simulation needs to be the same as if a player does it
+        - Speed up version of a player game
+    - Board Grid Tests
+        - Space Size:
+            - Default 10x10
+            - Room: 2x2 Grid => 20x20 tiles
+            - Hallway: 2x1 and 1x2 Grid => 20x10 and 10x20 tiles
+            - Map for a ship
+                - Configured
+                - Random?
 - Beyond Prisms
     - Bases
         - Outpost
@@ -124,3 +132,7 @@
     - Polish and Test for private Beta
     - Decide to keep as personal or sell it
 
+## Conquest Game
+- Apply factions
+- Apply resources
+- Idea is attonomy and decision for the player
