@@ -16,6 +16,23 @@ public class PrismMovement : MonoBehaviour
 
     public void Start()
     {
+        var gameBoard = GameObject.FindWithTag("Board");
+        if (gameBoard != null)
+        {
+            if (gameBoard.TryGetComponent<Tilemap>(out var tilemap))
+            {
+                this.tilemap = tilemap;
+            }
+            else
+            {
+                throw new ArgumentNullException("Can't find Tilemap for Prism to go on");
+            }
+        }
+        else if (this.tilemap != null)
+        {
+            throw new ArgumentNullException("Can't find Tilemap for Prism to go on");
+        }
+
         if (TryGetComponent<Rigidbody2D>(out var foundRigidBody))
         {
             this.rigidBody = foundRigidBody;
