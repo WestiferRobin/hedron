@@ -9,8 +9,8 @@ public class PrismCore : MonoBehaviour
     // This is needed for inspector
     public PrismGender Gender;
     public PrismRace Race;
-    public CombatClass CombatClassID;
-    public CombatRank CombatRank;
+    public BattleRank Rank;
+    public BattleClass BattleClass;
 
     public PrismName Name { get; private set; }
     public PrismBody Body { get; private set; }
@@ -22,7 +22,8 @@ public class PrismCore : MonoBehaviour
         this.transform.name = this.Name.FullName;
 
         this.Body = new PrismBody(Race);
-        this.Stats = new PrismStats(CombatClassID);
+        this.Stats = new PrismStats(BattleClass);
+        this.BattleClass = new BattleClass(Body, BattleRank.Private); ;
 
         if (this.Gender == PrismGender.Unknown)
         {

@@ -20,9 +20,9 @@ public class PrismStats
     public int Charisma { get; private set; }
     public int Agility { get; private set; }
 
-    public PrismStats(CombatClass combatClass)
+    public PrismStats(BattleClass combatClass)
     {
-        if (combatClass == CombatClass.Unknown)
+        if (combatClass == BattleClass.Unknown)
         {
             throw new ArgumentException("Not a valid Combat Class to create PrismStats");
         }
