@@ -8,7 +8,7 @@ public class PrismBodyFactory
 {
     public static Dictionary<BodyPart, int> GeneratePrismBody(PrismRace race)
     {
-        // NOTE: Although Zetas and Humans/Terrians work for this configuration,
+        // NOTE: Although Zetas and Terrians work for this configuration,
         //      We need to consider other races. If the same then remove Factory.
         return new Dictionary<BodyPart, int>
         {

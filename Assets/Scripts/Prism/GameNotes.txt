@@ -28,28 +28,75 @@ Hedron vs Hedron: (Final test is 100 v 100 Hedrons)
                 - Fire, Overwatch, Hunker
     - First one who kills opponets Hedron wins
 
+
+
+
+
+
+
+
 Battle Class:
-1. Soldier: Rifle/Pistol Expert
-2. Specialist: Heal/Repair Expert
-3. Ranger: Melee/Movement Expert
-4. Officer: Sniper/Stealth Expert
-5. Commando: Heavy/Explosives Expert
-6. Guardian: Magix(Destruction/Conjuration) Expert
+0. BattleClass:
+    - Armor (Based on Material)
+    - Primary Gun
+    - Secondary Gun
+    - Item
+    - Grenade
+1. Soldier:
+    - Guardian:Nebula:Vandal
+    - Pistol
+    - MedPack
+    - FragGrenade
+2. Specialist:
+    - Stinger:Specter:Phantom
+    - Frenzy
+    - RepairPack
+    - ShockGrenade
+3. Ranger:
+    - Shotty:Bucky:Judge
+    - Sword
+    - StimPack
+    - SmokeGrenade
+4. Officer:
+    - Marshal:Scout:Operator
+    - Ghost
+    - StealthPack
+    - PoisinGrenade
+5. Commando:
+    - Bulldog:Ares:Odin
+    - Sheriff
+    - DamagePack
+    - FlameGrenade
+6. Wizard:
+    - Primary Power
+    - Secondary Power
+    - Third Power
+    - Fourth Power
 
 Items:
 - Packs
-    - MedPack
-    - RepairPack
-    - StimPack
-        - Damage
-        - Shield
-        - Movement
+    - MedPack x
+    - RepairPack x
+    - StealthPack x
+    - DamagePack x
+    - MovementPack x
 - Grenades
-    - Frag
-    - Smoke
-    - Poisin
-    - Shock
-    - Flame
+    - Frag x
+    - Smoke x
+    - Poisin x
+    - Shock x
+    - Flame x
+
+Prism:
+    - Level: 1-10 => Combat Rank
+    - Body: 10 => PrismBody/Health
+        - Head 3
+        - Torso 3
+        - Legs 2
+        - Arms 2
+    - Armor: 5  => Armor with PrismBody
+    - Movement: 5 => Spaces to move per turn
+    - Range: 5 => Can Fire at in range
 
 Weapons:
 - Pistols
@@ -59,25 +106,32 @@ Weapons:
 - Snipers
 - Machine Guns
 
-Combat Rank:
-1. Private 
-2. Corporal
-3. Lance => Choose a battle class
-4. Sergeant
-5. Lieutenant
-6. Commander => Can join Guardian if Wisdom is high enough
-7. Captain
-8. Colonel
-9. Major
-10. Arch
 
 ------------------------------------------------------------
 
-Guardian Sub Rank: => THIS IS FOR THE ORDER
+Combat Rank:
+1. Private 1
+    - Soldier
+    - Specialist
+    - Ranger
+    - Officer
+    - Commando
+2. Corporal 3
+3. Lance 5
+4. Sergeant 9
+5. Lieutenant 14
+6. Commander 20
+    - Possible Wizard choice
+7. Captain 27
+8. Colonel 35
+9. Major 44
+10. Arch 54
+
+Wizard Sub Rank: => THIS IS FOR THE ORDER
 1. Apprentice
 2. Journeyman
 3. Adept
 4. Diciple
 4. Master
 
-Guardian => Depends on the initiation by Wisdom/Genes
+Wizard => Depends on the initiation by Wisdom/Genes

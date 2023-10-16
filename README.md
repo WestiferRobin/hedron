@@ -44,7 +44,6 @@
             - Animations for using Items
 
 ## TODOs
-
 ### Classic Game
 - Socialize for 2 Hedrons
     - Add Social Hub for UI Text Hub

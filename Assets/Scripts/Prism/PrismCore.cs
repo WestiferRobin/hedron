@@ -9,12 +9,13 @@ public class PrismCore : MonoBehaviour
     // This is needed for inspector
     public PrismGender Gender;
     public PrismRace Race;
-    public CombatClass CombatClassID;
-    public CombatRank CombatRank;
-
     public PrismName Name { get; private set; }
     public PrismBody Body { get; private set; }
     public PrismStats Stats { get; private set; }
+
+    public BattleRank Rank;
+    public BattleClassID BattleClassType;
+    public BattleClass BattleClass;
 
     public void Start()
     {
@@ -22,11 +23,16 @@ public class PrismCore : MonoBehaviour
         this.transform.name = this.Name.FullName;
 
         this.Body = new PrismBody(Race);
-        this.Stats = new PrismStats(CombatClassID);
+        this.BattleClass = new BattleClass(
+            BattleClassType,
+            Rank,
+            Body
+        );
+        this.Stats = new PrismStats();
 
         if (this.Gender == PrismGender.Unknown)
         {
-            // TODO: Change this when Female Human sprite is ready
+            // TODO: Change this when Female Terrian sprite is ready
             this.Gender = PrismGender.Male;//PrismGenderFactory.RandomGender();
         }
     }

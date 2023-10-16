@@ -164,6 +164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69e06f0a8da124429e26030f6b20059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gender: 0
+  Race: -1
+  Rank: 0
+  BattleClassType: 0
 --- !u!114 &3123623043980254105
 MonoBehaviour:
   m_ObjectHideFlags: 0
