@@ -5,7 +5,7 @@ public enum PrismRace
     Unknown = -1,
 
     // Solar Federation
-    Terrian = 0xFFF, // Human => Terrians
+    Terrian = 0xFFF, // Terrians
     //Lambda = 0xFF0, // Sataurians
     //Gamma = 0x0F0, // Martians
     //Beta = 0x00F, // Neptonians

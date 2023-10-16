@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class HumanNames
+public static class TerrianNames
 {
     public static readonly List<string> MaleNames = new()
     {

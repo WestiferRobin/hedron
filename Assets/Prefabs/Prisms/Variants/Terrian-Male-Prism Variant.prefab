@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6496469356944570415
+--- !u!1001 &8796435282944877820
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,11 +26,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2143418149093646901, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
       propertyPath: m_Name
-      value: Human-Male-Prism
+      value: Terrian-Male-Prism Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500739788045019981, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
+      propertyPath: Race
+      value: 4095
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500739788045019981, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
+      propertyPath: Rank
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3500739788045019981, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
       propertyPath: Gender
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500739788045019981, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
+      propertyPath: BattleClassType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7929431076138584678, guid: 49ce3052ad25343e48df8dfae5e36fac, type: 3}
       propertyPath: m_Controller

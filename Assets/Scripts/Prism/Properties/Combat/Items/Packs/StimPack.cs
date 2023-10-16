@@ -1,5 +1,5 @@
 ﻿using System;
-public class StimPack
+public class StimPack : Pack
 {
 	public StimPack()
 	{

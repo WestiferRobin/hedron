@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine.Analytics;
 
-public class NameFactory
+public static class NameFactory
 {
     public static List<string> GetFirstNames(PrismGender gender, PrismRace race)
     {
@@ -12,8 +11,8 @@ public class NameFactory
         }
         return race switch
         {
-            PrismRace.Human => gender == PrismGender.Male ? HumanNames.MaleNames : HumanNames.FemaleNames,
-            PrismRace.Zeta => gender == PrismGender.Male ? ZetaNames.MaleNames : ZetaNames.FemaleNames,
+            PrismRace.Terrian => gender == PrismGender.Male ? TerrianNames.MaleNames : TerrianNames.FemaleNames,
+            PrismRace.Zetan => gender == PrismGender.Male ? ZetanNames.MaleNames : ZetanNames.FemaleNames,
             _ => throw new ArgumentException($"Race is not valid for getting getting FirstNames"),
         };
     }
@@ -22,8 +21,8 @@ public class NameFactory
     {
         return race switch
         {
-            PrismRace.Human => HumanNames.LastNames,
-            PrismRace.Zeta => ZetaNames.LastNames,
+            PrismRace.Terrian => TerrianNames.LastNames,
+            PrismRace.Zetan => ZetanNames.LastNames,
             _ => throw new ArgumentException($"Race is not valid for getting getting LastNames"),
         };
     }

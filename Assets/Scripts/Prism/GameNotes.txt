@@ -28,6 +28,13 @@ Hedron vs Hedron: (Final test is 100 v 100 Hedrons)
                 - Fire, Overwatch, Hunker
     - First one who kills opponets Hedron wins
 
+
+
+
+
+
+
+
 Battle Class:
 0. BattleClass:
     - Armor (Based on Material)
