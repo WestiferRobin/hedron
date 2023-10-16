@@ -59,7 +59,49 @@
     - Work with mu-prism with OpenAI
     - Create Tensorflow Models
         - Finish Tensorflow class first
+- Maps => 10 maps like valorant
+    - Consider Space Update
+    - Consider Land Update
+
+
+### Travel Game
+- Beyond Prisms
+    - Vehicles
+        - Craft (Prism Vehicles)
+            - Tanks
+            - Speeders
+            - Shuttles
+            - Fighters
+            - Carriers
+        - Ships (Hedron Vehicles)
+            - Freighter
+            - Corvette
+            - Frigate
+            - Capital
+            - Dreadnought
+    - Bases
+        - Outpost
+        - Colony
+        - Town
+        - City
+        - Citadel
+    - Solar
+        - Remake the solar system
+        - Apply Bases and Vehicles
+            - Work and make Fortress per Society
+            - Create Society Guardian Order
+            - Create Society Arch Government
+        - Work on Age of Empires and Red Alert mechanics
+        - Test 100 v 100 Hedrons
+    - Galaxy
+        - 3x3x3 Galaxies
+            - watch simulation
+            - play game
 - Board Integration: 100 Hedrons vs 100 Hedrons
+    - POLISHING!
+        - Update and fix any assets missing including sound
+            - Look at PixelLabs
+        - Update gamelogic and major refactoring as needed
     - Simulation needs to be the same as if a player does it
         - Speed up version of a player game
     - Camera
@@ -79,55 +121,6 @@
             - Normal: 200x200 tiles
             - Large: 220×220 tiles
             - Giant: 240×240 tiles
-
-### Travel Game
-- Board Integration: 100 Hedrons vs 100 Hedrons
-    - POLISHING!
-        - Update and fix any assets missing including sound
-            - Look at PixelLabs
-        - Update gamelogic and major refactoring as needed
-    - Simulation needs to be the same as if a player does it
-        - Speed up version of a player game
-    - Board Grid Tests
-        - Space Size:
-            - Default 10x10
-            - Room: 2x2 Grid => 20x20 tiles
-            - Hallway: 2x1 and 1x2 Grid => 20x10 and 10x20 tiles
-            - Map for a ship
-                - Configured
-                - Random?
-- Beyond Prisms
-    - Bases
-        - Outpost
-        - Colony
-        - Town
-        - City
-        - Citadel
-    - Vehicles
-        - Craft (Prism Vehicles)
-            - Tanks
-            - Speeders
-            - Shuttles
-            - Fighters
-            - Carriers
-        - Ships (Hedron Vehicles)
-            - Freighter
-            - Corvette
-            - Frigate
-            - Capital
-            - Dreadnought
-    - Solar
-        - Remake the solar system
-        - Apply Bases and Vehicles
-            - Work and make Fortress per Society
-            - Create Society Guardian Order
-            - Create Society Arch Government
-        - Work on Age of Empires and Red Alert mechanics
-        - Test 100 v 100 Hedrons
-    - Galaxy
-        - 3x3x3 Galaxies
-            - watch simulation
-            - play game
 - Judgement Day: Beta Testing
     - Polish and Test for private Beta
     - Decide to keep as personal or sell it
