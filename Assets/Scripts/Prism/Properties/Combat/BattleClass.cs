@@ -16,15 +16,15 @@ public enum BattleRank
 {
     Unknown = -1,
     Private = 0,
-    Corporal = 1,
-    Lance = 2,
-    Sergeant = 3,
-    Lieutenant = 4,
-    Commander = 5,
-    Captain = 6,
-    Colonel = 7,
-    Major = 8,
-    Arch = 9
+    Corporal = 1, // Freighter
+    Lance = 2, // Corvette
+    Sergeant = 3, // Outpost : 1 Corvette and 2 Freighters
+    Lieutenant = 4, // Frigate
+    Commander = 5, // Colony : 1 Frigate and 2 Corvettes
+    Captain = 6, // Capital
+    Colonel = 7, // Town : 1 Captial and 2 Frigates
+    Major = 8, // City : 3 Captial
+    Arch = 9 // Dreadnought : Citadel
 }
 
 
