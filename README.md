@@ -67,18 +67,19 @@
 - Beyond Prisms
     - Vehicles
         - Craft (Prism Vehicles)
-            - Tanks
-            - Speeders
-            - Shuttles
-            - Fighters
-            - Carriers
+            - Land
+                - Tanks 2
+                - Speeders 3
+            - Space
+                - Fighters 4 
+                - Shuttles 5
         - Ships (Hedron Vehicles)
             - Freighter
             - Corvette
             - Frigate
             - Capital
             - Dreadnought
-    - Bases
+    - Bases (Hedron Generators)
         - Outpost
         - Colony
         - Town
@@ -91,12 +92,9 @@
             - Create Society Guardian Order
             - Create Society Arch Government
         - Work on Age of Empires and Red Alert mechanics
-        - Test 100 v 100 Hedrons
+        - Test 1000 v 1000 Prisms
     - Galaxy
-        - 3x3x3 Galaxies
-            - watch simulation
-            - play game
-- Board Integration: 100 Hedrons vs 100 Hedrons
+- Board Integration: 1000 v 1000 Prisms
     - POLISHING!
         - Update and fix any assets missing including sound
             - Look at PixelLabs
