@@ -30,11 +30,6 @@ Hedron vs Hedron: (Final test is 100 v 100 Hedrons)
 
 
 
-
-
-
-
-
 Battle Class:
 0. BattleClass:
     - Armor (Based on Material)

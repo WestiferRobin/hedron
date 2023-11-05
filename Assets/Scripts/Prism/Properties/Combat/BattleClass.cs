@@ -4,7 +4,7 @@ public enum BattleClassID
 {
     Unknown = -1,
 
-    Soldier = 0,
+    Soldier = 0,    // TODO: Make this to work as Marine
     Specialist = 1,
     Ranger = 2,
     Officer = 3,
